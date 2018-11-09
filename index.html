@@ -3,8 +3,8 @@
     <title>GMAT Review Quiz</title>
   </head>
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" ></script>
     <script>
 // Load data from URL
 var vars = {};
@@ -12,11 +12,18 @@ var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,k
   vars[key] = value;
 });
 
-if (vars[questions]) {
+console.log("x")
+function load(data) {
+  answers = YAML.parse(data);
+  console.log("y")
+  console.log(answers)
+  if (vars["questions"]) {
+  
+  } else {
+  }
+}
 
-} else {
-
-}      
+$.get("answers.yaml", load)
     </script>
   </body>
 </html>
