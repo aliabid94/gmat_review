@@ -2,28 +2,57 @@
   <head>
     <title>GMAT Review Quiz</title>
   </head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js" ></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" ></script>
-    <script>
-// Load data from URL
-var vars = {};
-var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-  vars[key] = value;
-});
-
-console.log("x")
-function load(data) {
-  answers = YAML.parse(data);
-  console.log("y")
-  console.log(answers)
-  if (vars["questions"]) {
-  
-  } else {
-  }
-}
-
-$.get("answers.yaml", load)
-    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <div class="problem">
+      <div class="ui message">
+        <div class="question-number">
+          <div class="ui header">Question 1</div>
+        </div>
+        <div>
+          <div class="question ui segment">
+            <img src="questions/1.png">
+          </div>
+          <div class="answers">
+            <div class="ui vertical buttons">
+              <button class="ui button fluid">A</button>
+              <button class="ui button fluid">B</button>
+              <button class="ui button fluid">C</button>
+              <button class="ui button fluid">D</button>
+              <button class="ui button fluid">E</button>
+            </div>
+          </div>
+        </div>
+        <button class="ui yellow button hint">Hint?</button>
+      </div>
+    </div>
+    
+    
+    <div class="problem">
+      <div class="ui message">
+        <div class="question-number">
+          <div class="ui header">Question 2</div>
+        </div>
+        <div>
+          <div class="question ui segment">
+            <img src="questions/2.png">
+          </div>
+          <div class="answers">
+            <div class="ui vertical buttons">
+              <button class="ui button fluid">Only 1 Alone</button>
+              <button class="ui button fluid">Only 2 Alone</button>
+              <button class="ui button fluid">Either 1 or 2 Alone</button>
+              <button class="ui button fluid">1 and 2 together</button>
+              <button class="ui button fluid">Together insufficient</button>
+            </div>
+          </div>
+        </div>
+        <button class="ui yellow button">Hint?</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
