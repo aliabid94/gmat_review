@@ -1,7 +1,8 @@
-var answers;
+const NUM_QUESTIONS = 20
+
 $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.yaml", function(data) {
   answers = YAML.parse(data)
-  var question_numbers = getRandomSample(Object.keys(answers).length-1, 10)
+  var question_numbers = getRandomSample(Object.keys(answers).length-1, NUM_QUESTIONS)
   var html = ""
   for (var i = 0; i < question_numbers.length; i++) {
     question_number = question_numbers[i]+1
