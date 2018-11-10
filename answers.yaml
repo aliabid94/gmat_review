@@ -31,11 +31,11 @@
 5:
   answer: E
   hints:
-    - "total\\ capacity *82\\% = 138\\ billion"
-    - "total\\ capacity = 138\\ billion * \\frac{100}{82} \\approx 168\\ billion"
+    - "total\\ capacity *82\\% = 138\\ \\text{billion}"
+    - "total\\ capacity = 138\\ \\text{billion} * \\frac{100}{82} \\approx 168\\ \\text{billion}"
     - "total\\ capacity = original\\ volume + extra\\ capacity"
-    - "168\\ billion = 124\\ billion + extra\\ capacity"
-    - "44\\ billion"
+    - "168\\ \\text{billion} = 124\\ \\text{billion} + extra\\ capacity"
+    - "44\\ \\text{billion}"
 
 6:
   answer: B
@@ -88,18 +88,18 @@
 13:
   answer: A
   hints:
-    - "2 : \\frac{1}{3} \\rightarrow 2*3 : \\frac{1}{3} * 3"
+    - "2 : \\frac{1}{3} ~~~ \\rightarrow ~~~ 2*3 : \\frac{1}{3} * 3"
     - "6 : 1"
  
 14:
   answer: D
   hints:
-    - "\\text{If the ratio between the employees is } 2:3:5:6 \\text{, the ratio between the each employee and the TOTAL hours worked by all is } 2:3:5:6:(2+3+5+6) \\rightarrow 2:3:5:6:\\underline{16}"
+    - "\\text{If the ratio between the employees is } 2:3:5:6 \\text{, the ratio between the each employee and the TOTAL hours worked by all is } 2:3:5:6:(2+3+5+6) ~~~ \\rightarrow ~~~ 2:3:5:6:\\underline{16}"
     - "\\text{If the employee worked the fewest hours, the ratio between his hours and the total hours is } 2:16."
-    - "\\text{With this ratio, the total hours worked by everyone is: } 2:16 \\rightarrow 30 : \\underline{240}"
-    - "\\text{If he worked the second fewest hours, we have: } 3:16 \\rightarrow 30 : \\underline{160}"
-    - "\\text{If he worked the third fewest hours, we have: } 5:16 \\rightarrow 30 : \\underline{96}"
-    - "\\text{If he worked the most hours, we have: } 6:16 \\rightarrow 30 : \\underline{80}"
+    - "\\text{With this ratio, the total hours worked by everyone is: } 2:16 ~~~ \\rightarrow ~~~ 30 : \\underline{240}"
+    - "\\text{If he worked the second fewest hours, we have: } 3:16 ~~~ \\rightarrow ~~~ 30 : \\underline{160}"
+    - "\\text{If he worked the third fewest hours, we have: } 5:16 ~~~ \\rightarrow ~~~ 30 : \\underline{96}"
+    - "\\text{If he worked the most hours, we have: } 6:16 ~~~ \\rightarrow ~~~ 30 : \\underline{80}"
     - "\\text{Only nonviable number of total hours is: } 192"
 15:
   answer: D
@@ -127,17 +127,17 @@
 18:
   answer: D
   hints:
-    - "\\text{Simplify } 10y^2 = (x+2)(x-2) \\rightarrow 10y^2 = x^2 - 4"
-    - "\\text{Simplify option A: } 30y^2 = 3x^2 - 12 \\rightarrow 10y^2 = x^2 - 4"
-    - "\\text{Simplify option B: } 20y^2 = (2x-4)(x+2) \\rightarrow 10y^2 = x^2 - 4"
-    - "\\text(Rearrange option C: } 10y^2 = x^2 - 4  \\rightarrow 10y^2 = x^2 - 4"
+    - "\\text{Simplify } 10y^2 = (x+2)(x-2) ~~~ \\rightarrow ~~~ 10y^2 = x^2 - 4"
+    - "\\text{Simplify option A: } 30y^2 = 3x^2 - 12 ~~~ \\rightarrow ~~~ 10y^2 = x^2 - 4"
+    - "\\text{Simplify option B: } 20y^2 = (2x-4)(x+2) ~~~ \\rightarrow ~~~ 10y^2 = x^2 - 4"
+    - "\\text{Rearrange option C: } 10y^2 = x^2 - 4  ~~~ \\rightarrow ~~~ 10y^2 = x^2 - 4"
     - "\\text{Option D cannot be simplified or rearranged into the original equation}"
 
 19:
   answer: C
   hints:
     - "\\text{You can convert to a double inequality, or you can try each value }"
-    - "\\text{Lets create double inequalities: } |y - \\frac{1}{2}| < \\frac{11}{2} \\rightarrow -\\frac{11}{2} < y - \\frac{1}{2} < \\frac{11}{2}"
+    - "\\text{Lets create double inequalities: } |y - \\frac{1}{2}| < \\frac{11}{2} ~~~ \\rightarrow ~~~ -\\frac{11}{2} < y - \\frac{1}{2} < \\frac{11}{2}"
     - "-\\frac{10}{2} < y < \\frac{12}{2}"
     - "\\text{Only viable option: } 11/2"
 
@@ -145,9 +145,9 @@
   answer: C
   hints: 
     - "\\text{Use this formula to factor the original equation: } a^2 - b^2 = (a+b)(a-b)"
-    - "a = 3^4, b=2^4 \\rightarrow 3^8 - 2^8 = (3^4+2^4)(3^4-2^4)"
+    - "a = 3^4, b=2^4 ~~~ \\rightarrow ~~~ 3^8 - 2^8 = (3^4+2^4)(3^4-2^4)"
     - "\\text{Evaluate: } (81+16)(81-16) = 97 * 65"
-    - "\\text{Prime factor: } 97 * 65 \\rightarrow 97 * 5 * 13"
+    - "\\text{Prime factor: } 97 * 65 ~~~ \\rightarrow ~~~ 97 * 5 * 13"
     - "\\text{Only unviable factor: } 35 \\text{ which is } 5 * 7"
     
 21:

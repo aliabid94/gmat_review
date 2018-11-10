@@ -14,7 +14,7 @@
 
 .question {
   width: 300px;
-  min-height: 300px;
+  height: 300px;
 }
 
 .question img {
@@ -33,6 +33,5 @@
   height: 100%;
 }
 .hint {
-  display: none;
   margin-bottom: 10px;
 }
