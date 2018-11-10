@@ -94,7 +94,7 @@
 14:
   answer: D
   hints:
-    - "\\text{The ratio between the each employee and the TOTAL hours worked by all works is: }" 
+    - "\\text{The ratio between each employees hours and the TOTAL hours worked by all is: }" 
     - "2:3:5:6:(2+3+5+6) ~~~ \\rightarrow ~~~ 2:3:5:6:\\underline{16}"
     - "\\text{If this employee worked the least, the ratio of his hours to total hours is } 2:16."
     - "\\text{With this ratio, the total hours worked by everyone is: } 2:16 ~~~ \\rightarrow ~~~ 30 : \\underline{240}"
