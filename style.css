@@ -1,3 +1,4 @@
+.katex { font-size: 1em !important; } 
 .problem {
   max-width: 500px;
   margin: 30px;
@@ -30,4 +31,8 @@
 }
 .button > i {
   height: 100%;
+}
+.hint {
+  display: none;
+  margin-bottom: 10px;
 }
