@@ -94,19 +94,20 @@
 14:
   answer: D
   hints:
-    - "\\text{If the ratio between the employees is } 2:3:5:6 \\text{, \\\\the ratio between the each employee and the TOTAL hours \\\\worked by all is } 2:3:5:6:(2+3+5+6) ~~~ \\rightarrow ~~~ 2:3:5:6:\\underline{16}"
-    - "\\text{If the employee worked the fewest hours, the ratio between his hours \\\\and the total hours is } 2:16."
+    - "\\text{The ratio between the each employee and the TOTAL hours worked by all works is: }" 
+    - "2:3:5:6:(2+3+5+6) ~~~ \\rightarrow ~~~ 2:3:5:6:\\underline{16}"
+    - "\\text{If this employee worked the least, the ratio of his hours to total hours is } 2:16."
     - "\\text{With this ratio, the total hours worked by everyone is: } 2:16 ~~~ \\rightarrow ~~~ 30 : \\underline{240}"
-    - "\\text{If he worked the second fewest hours, we have: } 3:16 ~~~ \\rightarrow ~~~ 30 : \\underline{160}"
-    - "\\text{If he worked the third fewest hours, we have: } 5:16 ~~~ \\rightarrow ~~~ 30 : \\underline{96}"
+    - "\\text{If he worked the second least, we have: } 3:16 ~~~ \\rightarrow ~~~ 30 : \\underline{160}"
+    - "\\text{If he worked the third least, we have: } 5:16 ~~~ \\rightarrow ~~~ 30 : \\underline{96}"
     - "\\text{If he worked the most hours, we have: } 6:16 ~~~ \\rightarrow ~~~ 30 : \\underline{80}"
     - "\\text{Only nonviable number of total hours is: } 192"
 15:
   answer: D
   hints:
-    - "\\\\text{Rolls left at noon: } 40 * (1 - \\frac{1}{2}) = 20"
-    - "\\\\text{Rolls left at closing: } 20 * (1 - 0.8)"
-    - "= 4 \\\\text{ Rolls left}"
+    - "\\text{Rolls left at noon: } 40 * (1 - \\frac{1}{2}) = 20"
+    - "\\text{Rolls left at closing: } 20 * (1 - 0.8)"
+    - "= 4 \\text{ Rolls left}"
   
 16:
   answer: B
