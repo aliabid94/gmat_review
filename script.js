@@ -1,4 +1,4 @@
-const NUM_QUESTIONS = 10
+const NUM_QUESTIONS = 15
 
 $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.yaml", function(data) {
   answers = YAML.parse(data)

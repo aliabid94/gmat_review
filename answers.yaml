@@ -155,5 +155,5 @@
 21:
   answer: A
   hints:
-    - "\\text{In an arithmetic sequence, the difference between consecutive numbers is always the same, like in: } 2, 3, 4, 5 \\text{ or } 5, 8, 11, 14, 17"
-    - "\\text{One simple way to see }"
+    - "\\text{In an arithmetic sequence, the difference between consecutive numbers is equal,} \\\\ \\text{like in: } 2, 3, 4, 5 \\text{ or } 5, 8, 11, 14, 17"
+    - "\\text{One simple way to see what }"
