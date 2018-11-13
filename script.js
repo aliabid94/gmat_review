@@ -1,4 +1,4 @@
-const NUM_QUESTIONS = 25
+const NUM_QUESTIONS = 15
 const REWARD_RATE = 5
 selected = {}
 cuteness = {}
