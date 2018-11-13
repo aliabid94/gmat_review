@@ -29,13 +29,13 @@ $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.ya
             </div>
           </div>
           ${answer["hints"].map(str => "<div class='hint'>"+katex.renderToString(str)+"</div>").join("")}
-          <button class='ui yellow button add_hint'>Hint?</button>
+          <button class='ui blue button add_hint'>Hint?</button>
         </div>
       </div>
     `
   }
   html += `
-    <div class="check_answers"><button class="ui button huge fluid green">Check answers!</div></div>
+    <div class="check_answers"><button class="ui button huge fluid blue">Check answers!</div></div>
   `
   $("body").append(html);
 });
@@ -71,11 +71,12 @@ $("body").on("click", ".check_answers", function (evt) {
   $(".check_answers").hide()
   $(".add_hint").hide()
   $(".hint").show()
-  $("html, body").animate({ scrollTop: 0 }, "slow") 
   $(".final_score").show()
   $(".selected").removeClass("blue")
   $(".selected:not(.correct)").addClass("red")
   $(".selected.correct").addClass("green")
   $(".choice").addClass("disabled")
   $(".score").text($(".selected.correct").length)
+  window.scrollTo(0,document.body.scrollHeight);
+  $("html, body").animate({ scrollTop: 0 }, "slow") 
 });
