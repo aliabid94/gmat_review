@@ -1,4 +1,5 @@
 const NUM_QUESTIONS = 15
+const REWARD_RATE = 5
 
 $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.yaml", function(data) {
   answers = YAML.parse(data)
@@ -35,8 +36,13 @@ $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.ya
     `
   }
   html += `
-    <div class="check_answers"><button class="ui button huge fluid blue">Check answers!</div></div>
+    <div class="reward"><button class="ui message">i</div></div>
   `
+  if (i != 0 && i % REWARD_RATE == 0) {
+    html += `
+      <div class="reward"><button class="ui button huge fluid blue">Check answers!</div></div>
+    `
+  }
   $("body").append(html);
 });
 

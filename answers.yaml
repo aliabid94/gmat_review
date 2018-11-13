@@ -157,12 +157,12 @@
   hints:
     - "\\text{In an arithmetic sequence, the difference between consecutive numbers is equal,} \\\\ \\text{like in: } (-1, 0, 1, 2, 3) \\text{ or } (5, 8, 11, 14, 17)"
     - "\\text{In I., we double every number, like: } \\\\ (-1, 0, 1, 2, 3) ~~~ \\rightarrow ~~~ (-2, 0, 2, 4, 6), or \\\\ (5, 8, 11, 14, 17) ~~~ \\rightarrow ~~~ (10, 16, 22, 28, 34)"
-    - "\\text{The effect of this operation doubles the difference between numbers, } \\\\ \\text{but the difference is equal. It is still an arithmetic sequence.}
+    - "\\text{The effect of this operation doubles the difference between numbers, } \\\\ \\text{but the difference is equal. It is still an arithmetic sequence.}"
     - "\\text{In II., we subtract 3 from every number, like: } \\\\ (-1, 0, 1, 2, 3) ~~~ \\rightarrow ~~~ (-4, -3, -2, -1, 0), or \\\\ (5, 8, 11, 14, 17) ~~~ \\rightarrow ~~~ (2, 5, 8, 11, 14)"
-    - "\\text{The effect of this operation doesn't change the difference between numbers. } \\\\ \\text{It is still an arithmetic sequence.}
+    - "\\text{The effect of this operation doesn't change the difference between numbers. } \\\\ \\text{It is still an arithmetic sequence.}"
     - "\\text{In III., we square every number, like: } \\\\ (-1, 0, 1, 2, 3) ~~~ \\rightarrow ~~~ (1, 0, 1, 4, 9), or \\\\ (5, 8, 11, 14, 17) ~~~ \\rightarrow ~~~ (25, 64, 121, 196, 289)"
-    - "\\text{The difference between consecutive numbers is not the same anymore. }
-    - "\\text{Only I. and II. are still arithmetic sequences. }
+    - "\\text{The difference between consecutive numbers is not the same anymore. }"
+    - "\\text{Only I. and II. are still arithmetic sequences. }"
  
 22:
   answer: E
@@ -177,10 +177,10 @@
 23:
   answer: C
   hints:
-    - "\\frac{2^{-17}*2^{3} + 2^{-17}*2^{2} + 2^{-17}*2^{1} + 2^{-17}*2^{0}}{5}
-    - "\\frac{2^{-17}*(2^{3} + 2^{2} + 2^{1} + 2^{0})}{5}
-    - "\\frac{2^{-17}*15}{5}
-    - "2^{-17}*3
+    - "\\frac{2^{-17}*2^{3} + 2^{-17}*2^{2} + 2^{-17}*2^{1} + 2^{-17}*2^{0}}{5}"
+    - "\\frac{2^{-17}*(2^{3} + 2^{2} + 2^{1} + 2^{0})}{5}"
+    - "\\frac{2^{-17}*15}{5}"
+    - "2^{-17}*3"
     - "\\text{3 times the value}"
 
 24:
@@ -214,9 +214,9 @@
   answer: B
   hints:
     - "x(2x + 1) = 0 ~~~ \\rightarrow ~~~ x = 0, 2x + 1 = 0"
-    - "x = 0, x = \\frac{-1}{2}
+    - "x = 0, x = \\frac{-1}{2}"
     - "(x + \\frac{1}{2})(2x - 3) = 0 ~~~ \\rightarrow ~~~ x + \\frac{1}{2} = 0, 2x - 3 = 0"
-    - "x = \\frac{-1}{2}, x = \\frac{3}{2}
+    - "x = \\frac{-1}{2}, x = \\frac{3}{2}"
     - "\\text{Only common solution is: } \\frac{-1}{2}"
     
 28:
@@ -241,29 +241,29 @@
     - "x - 3 < 7 ~~~ \\rightarrow ~~~ x < 10"
     - "-3 > x > 10"
     
-31:
-  answer: D
-  type: data sufficiency
-  hints:
-    - "1) ~ x = -|x| ~~~ \\rightarrow ~~~ -x = |x| ~~~ \\rightarrow ~~~ x \\leq 0"
-    - "\\text{1 is insufficient}"
-    - "2) ~ x^2 = 4 ~~~ \\rightarrow ~~~ x = \\pm2
-    - "\\text{2 is insufficient}"
-    - "1\\&2) ~ x \\leq 0 \\text{ and } x = \\pm2"
-    - "\\text{Only possible solution: } x = -2"
-    - "\\text{1 and 2 is sufficient}"
+#31:
+#  answer: D
+#  type: data sufficiency
+#  hints:
+#    - "1) ~ x = -|x| ~~~ \\rightarrow ~~~ -x = |x| ~~~ \\rightarrow ~~~ x \\leq 0"
+#    - "\\text{1 is insufficient}"
+#    - "2) ~ x^2 = 4 ~~~ \\rightarrow ~~~ x = \\pm2"
+#    - "\\text{2 is insufficient}"
+#    - "1\\&2) ~ x \\leq 0 \\text{ and } x = \\pm2"
+#    - "\\text{Only possible solution: } x = -2"
+#    - "\\text{1 and 2 is sufficient}"
 
-32:
-  type: data sufficiency
-  answer: C
-  hints:
-    - "\\text{Original question: } sqrt[3]{w} = ?"
-    - "1) ~ sqrt[5]{w} = 64 ~~~ \\rightarrow ~~~ w = 64^5"
-    - "sqrt[3]{w} = sqrt[3]{64^5}"
-    - "\\text{1 is sufficient}"
-    - "2) ~ sqrt[15]{w} = 4 ~~~ \\rightarrow ~~~ w = 4^15"
-    - "sqrt[3]{w} = sqrt[3]{4^15}"
-    - "\\text{2 is also sufficient, so either alone is sufficient.}"
+#32:
+#  type: data sufficiency
+#  answer: C
+#  hints:
+#    - "\\text{Original question: } sqrt[3]{w} = ?"
+#    - "1) ~ sqrt[5]{w} = 64 ~~~ \\rightarrow ~~~ w = 64^5"
+#    - "sqrt[3]{w} = sqrt[3]{64^5}"
+#    - "\\text{1 is sufficient}"
+#    - "2) ~ sqrt[15]{w} = 4 ~~~ \\rightarrow ~~~ w = 4^15"
+#    - "sqrt[3]{w} = sqrt[3]{4^15}"
+#    - "\\text{2 is also sufficient, so either alone is sufficient.}"
     
      
   
