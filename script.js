@@ -1,5 +1,11 @@
 const NUM_QUESTIONS = 15
 const REWARD_RATE = 5
+selected = {}
+cuteness = {}
+
+$.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/cuteness.yaml", function(data) {
+  cuteness = YAML.parse(data)
+});
 
 $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.yaml", function(data) {
   answers = YAML.parse(data)
@@ -10,7 +16,7 @@ $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.ya
     answer = answers[question_number]
     correct_answer = answer.answer
     html += `
-      <div class='problem'>
+      <div class='problem' num="${i+1}">
         <div class='ui message'>
           <div class='question-number'>
             <div class='ui header'>Question ${i+1}</div>
@@ -33,27 +39,43 @@ $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.ya
           <button class='ui blue button add_hint'>Hint?</button>
         </div>
       </div>
+      ${((i+1) % REWARD_RATE == 0) ? "<div class='reward'><div class='ui message yellow' scope='"+(i-3)+"-"+(i+1)+"'></div></div>" : ""}
     `
   }
   html += `
-    <div class="reward"><button class="ui message">i</div></div>
+    <div class="check_answers"><button class="ui button huge fluid blue">Check answers!</div></div>
   `
-  if (i != 0 && i % REWARD_RATE == 0) {
-    html += `
-      <div class="reward"><button class="ui button huge fluid blue">Check answers!</div></div>
-    `
-  }
   $("body").append(html);
-});
+})
 
 $("body").on("click", ".answers button", function (evt) {
   $(evt.target).parent().find("button").removeClass("blue").removeClass("selected")
   $(evt.target).addClass("blue").addClass("selected")
-});
+  var problem = $(evt.target).parent().parent().parent().parent().parent().attr('num')
+  selected[problem] = true
+  $( ".reward > .message" ).each(function( index ) {
+    var bounds = $(this).attr("scope").split("-")
+    var start = parseInt(bounds[0])
+    var end = parseInt(bounds[1])
+    var complete_flag = true
+    for (var i = start; i <= end; i++) {
+      if (!$(".problem[num="+i+"]").find(".selected").length) {
+        complete_flag = false
+        break
+      }
+    }
+    if (complete_flag) {
+      var total_reward = Object.keys(cuteness).length
+      var reward = cuteness[Math.floor(total_reward * Math.random())]
+     $(this).append("<h2>"+reward.title+"</h2><br>")
+     $(this).append("<img src='"+reward.link+"' /><br>")
+    }
+  })
+})
 
 $("body").on("click", ".add_hint", function (evt) {
   var hints = $(evt.target).parent().find(".hint")
-  var opened = false;
+  var opened = false
   var hints_complete = true
   for (var i = 0; i < hints.length; i++) {
     if (opened) {
@@ -83,6 +105,6 @@ $("body").on("click", ".check_answers", function (evt) {
   $(".selected.correct").addClass("green")
   $(".choice").addClass("disabled")
   $(".score").text($(".selected.correct").length)
-  window.scrollTo(0,document.body.scrollHeight);
+  window.scrollTo(0,document.body.scrollHeight)
   $("html, body").animate({ scrollTop: 0 }, "slow") 
 });

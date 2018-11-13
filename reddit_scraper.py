@@ -30,6 +30,8 @@ output = open("cuteness.yaml", "w")
 for counter in range(len(links)):
     output.write(str(counter) + ":\n")
     link = links[counter]
+    if link.endswith(".gifv"):
+        link = link[:-5] + ".gif"
     title = titles[counter]
     output.write("  title: " + title + "\n")
     output.write("  link: " + link + "\n")
