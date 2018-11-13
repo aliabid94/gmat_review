@@ -44,3 +44,6 @@ body {
 .final_score {
   display: none;
 }
+.reward img {
+  width: 100%
+}

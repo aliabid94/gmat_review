@@ -1,4 +1,4 @@
-const NUM_QUESTIONS = 15
+const NUM_QUESTIONS = 25
 const REWARD_RATE = 5
 selected = {}
 cuteness = {}
@@ -39,7 +39,7 @@ $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.ya
           <button class='ui blue button add_hint'>Hint?</button>
         </div>
       </div>
-      ${((i+1) % REWARD_RATE == 0) ? "<div class='reward'><div class='ui message yellow' scope='"+(i-3)+"-"+(i+1)+"'></div></div>" : ""}
+      ${((i+1) % REWARD_RATE == 0) ? "<div class='reward'><div class='ui message yellow' scope='"+(i-REWARD_RATE+2)+"-"+(i+1)+"'></div></div>" : ""}
     `
   }
   html += `
@@ -54,6 +54,9 @@ $("body").on("click", ".answers button", function (evt) {
   var problem = $(evt.target).parent().parent().parent().parent().parent().attr('num')
   selected[problem] = true
   $( ".reward > .message" ).each(function( index ) {
+    if ($(this).hasClass("loaded")) {
+      return;
+    }
     var bounds = $(this).attr("scope").split("-")
     var start = parseInt(bounds[0])
     var end = parseInt(bounds[1])
@@ -67,8 +70,9 @@ $("body").on("click", ".answers button", function (evt) {
     if (complete_flag) {
       var total_reward = Object.keys(cuteness).length
       var reward = cuteness[Math.floor(total_reward * Math.random())]
-     $(this).append("<h2>"+reward.title+"</h2><br>")
+     $(this).append("<h4>"+reward.title+"</h4>")
      $(this).append("<img src='"+reward.link+"' /><br>")
+     $(this).addClass("loaded")
     }
   })
 })
