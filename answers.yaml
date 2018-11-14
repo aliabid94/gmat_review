@@ -315,7 +315,7 @@
   answer: C
   hints:
     - "1 + 2 + 3 + 4 .. + 52"
-    - "\\text{Sum of series: } "number of terms * \\frac{first + last}{2}
+    - "\\text{Sum of series: } number of terms * \\frac{first + last}{2}"
     - "52 * \\frac{1 + 52}{2}"
     - "= 1378"
 
@@ -325,7 +325,7 @@
     - "average = total score / number of tests"
     - "\\text{With 4 tests: } 78 = \\frac{total}{4}"
     - "total = 312"
-    - "\\text{With 5 tests: } 80 = \\frac{312 + last score}{5}
+    - "\\text{With 5 tests: } 80 = \\frac{312 + last score}{5}"
     - "400 = 312 + last score"
     - "last score = 88"
     
