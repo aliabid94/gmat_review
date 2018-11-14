@@ -256,12 +256,12 @@
   type: data_sufficiency
   answer: C
   hints:
-    - "\\text{Original question: } sqrt[3]{w} = ?"
-    - "1) ~ sqrt[5]{w} = 64 ~~~ \\rightarrow ~~~ w = 64^5"
-    - "sqrt[3]{w} = sqrt[3]{64^5}"
+    - "\\text{Original question: } \\sqrt[3]{w} = ?"
+    - "1) ~ \\sqrt[5]{w} = 64 ~~~ \\rightarrow ~~~ w = 64^5"
+    - "\\sqrt[3]{w} = \\sqrt[3]{64^5}"
     - "\\text{1 is sufficient}"
-    - "2) ~ sqrt[15]{w} = 4 ~~~ \\rightarrow ~~~ w = 4^15"
-    - "sqrt[3]{w} = sqrt[3]{4^15}"
+    - "2) ~ \\sqrt[15]{w} = 4 ~~~ \\rightarrow ~~~ w = 4^15"
+    - "\\sqrt[3]{w} = \\sqrt[3]{4^15}"
     - "\\text{2 is also sufficient, so either alone is sufficient.}"
     
 33:
@@ -309,7 +309,7 @@
     - "total\\ weight = 8 * \\frac{99}{8} + 4 * \\frac{61}{4}"
     - "total\\ weight = 160"
     - "number\\ of\\ packages = 12"
-    - "\\frac{190}{12} = 13\\frac{1}{3}"
+    - "\\frac{160}{12} = 13\\frac{1}{3}"
     
 38:
   answer: C
@@ -352,16 +352,18 @@
 42: 
   answer: A
   hints:
-    - "yearly\\ budget = 12600 ~~~ \\rightarrow ~~~ monthly|| budget = 12600 / 12 = 1050"
+    - "yearly\\ budget = 12600 ~~~ \\rightarrow ~~~ monthly\\ budget = 12600 / 12 = 1050"
     - "monthly\\ budget = 1050 ~~~ \\rightarrow ~~~ 4\\ month\\ budget = 1050 * 4 = 4200"
     - "4580 - 4200 = 380"
 
 43: 
-  answer: A
+  answer: B
   hints:
     - "total\\ employed = employed\\ males + employed\\ females"
     - "64\\% = 48\\% + employed\\ females"
     - "employed\\ females = 16\\%" 
+    - "employed\\ females / employed\\ people = 16\\% / 64\\%"
+    - "25\\%"
     
 44: 
   answer: B
@@ -418,9 +420,9 @@
 49:
   answer: B
   hints:
-    - "First 10 multiples of 5 are evenly spaced"
-    - "In an evenly spaced set, median = mean"
-    - "M - m = 0"    
+    - "\\text{First 10 multiples of 5 are evenly spaced}"
+    - "\\text{In an evenly spaced set, median = mean}"
+    - "\\text{M - m = 0}"    
 
 50: 
   answer: A
