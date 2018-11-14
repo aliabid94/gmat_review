@@ -434,8 +434,149 @@
     - "x = \\frac{y}{11} * time"
     - "time = \\frac{11x}{y}"
     
+51:
+  answer: C 
+  hints:
+    - "1) ~ O = 2G + 20"    
+    - "\\text{1 formula, 2 variables. 1 is insufficient.}" 
+    - "2) ~ 15O + 18G = 38700"
+    - "15O + 18G = 38700 ~~~ \\rightarrow ~~~ 18G = 38700 - 15O ~~~ \\rightarrow ~~~ G = 2150 - \\frac{5}{6}O"
+    - "\\text{2 is insufficient. 1 formula, 2 variables.}" 
+    - "1\\&2) O = 2G + 20 \\\\ G = 2150 - \\frac{5}{6}O"
+    - "O = 2(2150 - \\frac{5}{6}O) + 2"
+    - "\\text{O can be solved. 1 & 2 together is sufficient.}" 
+            
+52:
+  answer: B
+  hints:
+    - "total\\ rate\\ increasing = rate\\in - rate\\ out"
+    - "\\text{1) Gives no information about rate of flow. Insufficient.}"
+    - "2) total\\ rate\\ increasing = \\frac{10 \\gallon}{1\\ min} - \\frac{10 \\gallon}{2.5\\ min}"
+    - "\\text{2 can be solved. Sufficient.}"
+
+53:
+  answer: C
+  hints:
+    - "total\\ income = hours\\ worked * hourly\\ wage"
+    - "1) ~ 225 = 30 * hourly\\ wage"
+    - "hourly\\ wage = 7.5"
+    - "new\\ total\\ income = new\\ hours\\ worked * new\\ hourly\\ wage"
+    - "225 = new\\ hours\\ worked * (7.5 + 1.5)"
+    - "new\\ hours\\ worked = 25"
+    - "\\text{5 fewer hours worked. 1 is sufficient.}"
+    - "2) ~ hourly\\ wage + 1.50 = hourly\\ wage * 1.20"
+    - "hourly\\ wage * 0.2 = 1.5 ~~~ \\rightarrow ~~~ hourly\\ wage = 7.5"
+    - "\\text{Same steps from statement 1 can be used. 2 is sufficient.}"
+  
+54:
+  answer: E
+  hints:
+    - "\\text{Statement 1 tells nothing about biology students. Insufficient.}"
+    - "\\text{Statement 2 tells nothing about chemistry students. Insufficient.}"
+    - "\\text{Statement 1 & 2 tells nothing about overlapping students or other students Insufficient.}"
+
+55:
+  answer: B
+  hints:
+    - "\\text{1 clearly insufficient, n can be any value over 12.}"
+    - "\\text{The numbers ordered, excluding n: } (9, 12, 15, 20)"
+    - "\\text{Only way for 13 to be median is if n = 13: } (9, 12, 13, 15, 20)"
+    - "\\text{2 is sufficient}"
+
+56:
+  answer: A
+  hints:
+    - "\\text{Let's call C the bottom left corner. VCR makes a right triangle.}"
+    - "\\overline{VC} = 5, \\overline{VR} = 10. \\text{Use pythogorean theorem for } \\overline{CR}"
+    - "5^2 + (\\overline{CR})^2 = 10^2"
+    - "\\overline{CR} = 5\\sqrt{3}"
+    - "\\overline{RS} = \\overline{CS} - \\overline{CR}"
+    - "= 10 - 5\\sqrt{3}"
+
+57:
+  answer: D
+  hints:
+    - "area\\ of\\ doughnut = area\\ of\\ big\\ circle - area\\ of\\ small\\ circle"
+    - "= 11^2\\pi - 8^2\\pi"
+    - "= 57\\pi"
     
+58: 
+  answer: A
+  hints:
+    - "volume\\ of\\ rectangular\\ prism = length*width*height = l*w*h"
+    - "area\\ of\\ side\\ 1 = l*w = 12"
+    - "area\\ of\\ side\\ 2 = w*h = 15"
+    - "area\\ of\\ side\\ 3 = l*h = 20"
+    - "(l*w) * (w*h) * (l*h) = 12 * 15 * 20 = 3600"   
+    - "(l*w*h)^2 = 3600"   
+    - "l*w*h = 60"   
+
+59:
+  answer: E
+  hints:
+    - "\\text{Radius goes from (2,-3) to (5,0)}"
+    - "\\text{Length of radius equals distance from (2,-3) to (5,0)}"
+    - "\\text{Distance between points: } \\sqrt{(y_2 - y_1)^2 + (x_2 - x_1)^2}"
+    - "\\sqrt{(0 - (-3))^2 + (5 - 2)^2}"
+    - "\\sqrt{18} = 3\\sqrt{2} = radius"
+    - "area = \\pi * r^2 = \\pi * (3\\sqrt(2))^2 = 18\\pi"
     
+60:
+  answer: C
+  hints: 
+    - "\\text{Call C the bottom right corner. ACB is a right triangle.}"
+    - "\\(overline{CB})^2 + (\\overline{AC})^2 = (\\overline{AB})^2"
+    - "5^2 + (\\overline{AC})^2 = 13^2"
+    - "\\overline{AC} = 12"
+    - "area\\ of\\ trapezoid = base * \\frac{height_1 + height_2}{2})"
+    - " = 12 * \\frac{2 + 5}{2}) = 42"
+
+61:
+  answer: D
+  hints:
+    - "\\text{The ladder against the wall makes a 30-60-90 triangle}"
+    - "\\text{The ladder is the hypotenuse opposite to the 90 angle.}"
+    - "\\text{The height is the triangle side opposite to the 60 angle.}"
+    - "\\text{The base is the triangle side opposite to the 30 angle.}"
+    - "\\text{The ratio of sides in a 30-60-90 triangle is: } a : a*sqrt{3} : 2a"
+    - "2a = 70, a = 35 ~~~ \\right arrow ~~~  35 : 35sqrt{3} : 70"
+    - "\\text{Add height and 7 ft elevation: } 35sqrt{3} + 7"
+
+62:
+  answer: A
+  hints:
+    - "width = a, length = 2a"
+    - "perimeter = 2 * width + 2 * length = 6a"
+    - "6a = 360 ~~~ \\rightarrow ~~~ a = 60"
+    - "length = 2a = 120"
+
+63:
+  answer: E
+  hints:
+    - "\\text{area of triangle: } x * y / 2 = (y + 2) * y / 2"
+    - "(y + 2) * y / 2 = 24"
+    - "y^2 + 2y - 48 = 0"
+    - "(y - 6)(y + 8) = 0"
+    - "\\underline{y = 6}, y = -8 \\text{ (because y must be positive)}"
+    - "x^2 + y^2 = z^2"
+    - "(6 + 2)^2 + 6^2 = z^2"
+    - "z = 10"
+
+64:
+  answer: D
+  hints:
+    - "\\text{A full 360 rotation around P would bring B back to its original ocation.}"
+    - "\\text{A one-third of full clockwise rotation would bring it to C.}"
+    - "\\text{A two-third of full clockwise rotation would bring it to A.}"
+    - "360 * \\frac{2}{3} = 240"
     
+65:
+  answer: A
+  hints:
+    - "\\angle QPS = 180 - 140 = 40"
+    - "x = \\angle QRS = \\angle QPS = 40"
+    - "\\angle PSR = 180 - \\angle QPS = 180 - 40 = 140"
+    - "2y = 140 ~~~ \\rightarrow ~~~ y = 70"
+    - "y - x = 30"
     
     
