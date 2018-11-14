@@ -278,17 +278,17 @@
   type: data_sufficiency
   answer: A
   hints:
-    - "1) ~ S_298 = -616 \\text{ and each element is two smaller than the element before. }"
-    - "S_293 = -606, ~ S_294 = -608, ~ S_295 = -610, ~ S_296 = -612, ~ S_297 = -614, ~ S_298 = -616"
+    - "1) ~ S_{298} = -616 \\text{ and each element is two smaller than the element before. }"
+    - "S_{293} = -606, ~ S_{294} = -608, ~ S_{295} = -610, ~ S_{296} = -612, ~ S_{297} = -614, ~ S_{298} = -616"
     - "\\text{1 is sufficient}"
-    - "2) ~ S_0 = 22"
+    - "2) ~ S_{0} = 22"
     - "\\text{Difference between consecutive numbers is unknown, so 2 is insufficient}"
      
 35:
   type: data_sufficiency
   answer: A
   hints:
-    - "1) ~ 9x < 10x \\text{ only possible when x is less than zero, so it is negative.}"
+    - "1) ~ 9x > 10x \\text{ only possible when x is less than zero, so it is negative.}"
     - "\\text{1 is sufficient}"
     - "2) ~ x + 3 > 0 ~~~ \\rightarrow ~~~ x > -3"
     - "\\text{x can be 2, e.g. positive, or -1, e.g. negative}"
@@ -304,30 +304,30 @@
 37:
   answer: A
   hints:
-    - "average weight = total weight / number of packages"
-    - "total weight = 8 * 12\\frac{3}{8} + 4 * 15\\frac{1}{4}"
-    - "total weight = 8 * \\frac{99}{8} + 4 * \\frac{61}{4}"
-    - "total weight = 160"
-    - "number of packages = 12"
+    - "average\\ weight = total\\ weight / number\\ of\\ packages"
+    - "total\\ weight = 8 * 12\\frac{3}{8} + 4 * 15\\frac{1}{4}"
+    - "total\\ weight = 8 * \\frac{99}{8} + 4 * \\frac{61}{4}"
+    - "total\\ weight = 160"
+    - "number\\ of\\ packages = 12"
     - "\\frac{190}{12} = 13\\frac{1}{3}"
     
 38:
   answer: C
   hints:
     - "1 + 2 + 3 + 4 .. + 52"
-    - "\\text{Sum of series: } number of terms * \\frac{first + last}{2}"
+    - "Sum\\ of\\ series = number\\ of\\ terms * \\frac{first + last}{2}"
     - "52 * \\frac{1 + 52}{2}"
     - "= 1378"
 
 39:
   answer: E
   hints:
-    - "average = total score / number of tests"
-    - "\\text{With 4 tests: } 78 = \\frac{total}{4}"
-    - "total = 312"
-    - "\\text{With 5 tests: } 80 = \\frac{312 + last score}{5}"
-    - "400 = 312 + last score"
-    - "last score = 88"
+    - "average = total\\ score / number\\ of\\ tests"
+    - "\\text{With 4 tests: } 78 = \\frac{total\\ score}{4}"
+    - "total\\ score = 312"
+    - "\\text{With 5 tests: } 80 = \\frac{312 + last\\ score}{5}"
+    - "400 = 312 + last\\ score"
+    - "last\\ score = 88"
     
 40:
   answer: B
@@ -335,4 +335,105 @@
     - "distance = speed * time"
     - "y = x * time"
     - "time = \\frac{y}{x}"
+
+41: 
+  answer: B
+  hints:
+    - "\\text{I. means the numbers of cars sold, in order: } (2,2,3,4,6,7,8)"
+    - "median = 4, \\ mean = \\frac{2+2+3+4+6+7+8}{7} = \\frac{32}{7}"
+    - "median \\neq mean"
+    - "\\text{II. means the numbers of cars sold, in order: } (2,3,4,4,6,7,8)"
+    - "median = 4, \\ mean = \\frac{2+3+4+4+6+7+8}{7} = \\frac{34}{7}"
+    - "median \\neq mean"
+    - "\\text{III. means the numbers of cars sold, in order: } (2,3,4,5,6,7,8)"
+    - "\\text{Evenly spaced set means: } mean = median"
+    - "\\text{III. only}"
+
+42: 
+  answer: A
+  hints:
+    - "yearly\\ budget = 12600 ~~~ \\rightarrow ~~~ monthly|| budget = 12600 / 12 = 1050"
+    - "monthly\\ budget = 1050 ~~~ \\rightarrow ~~~ 4\\ month\\ budget = 1050 * 4 = 4200"
+    - "4580 - 4200 = 380"
+
+43: 
+  answer: A
+  hints:
+    - "total\\ employed = employed\\ males + employed\\ females"
+    - "64\\% = 48\\% + employed\\ females"
+    - "employed\\ females = 16\\%" 
+    
+44: 
+  answer: B
+  hints:
+    - "work = speed * time * workers"
+    - "270 = speed * 1 * 6"
+    - "speed = 45"
+    - "work = speed * time * workers"
+    - "work = 45 * 4 * 10"
+    - "work = 1800"
+
+45:
+  answer: A
+  hints:
+    - "\\text{10 consecutive integers: } (a, a + 1, a + 2, a + 3.. a + 9)"
+    - "\\text{First 5: } (a, a + 1, a + 2, a + 3, a + 4)"
+    - "\\text{Sum of first 5: } 5a + 10"
+    - "5a + 10 = 560 ~~~ \\rightarrow ~~~ a = 110"
+    - "\\text{Last 5: } (a + 5, a + 6, a + 7, a + 8, a + 9)"
+    - "\\text{Sum of last 5: } 5a + 35"
+    - "5a + 35 = 5 * 110  + 35 = 585"
+
+46: 
+  answer: D
+  hints:
+    - "\\text{Day 1: } amount\\ orangeade = 1\\ amount\ \ OJ + 1\\ amount \\water"
+    - "= 2\\ amount\\ orangeade"
+    - "\\text{Day 2: } amount\\ orangeade = 1\\ amount\ \ OJ + 2\\ amount \\water"
+    - "= 3\\ amount\\ orangeade"
+    - "revenue = price * amount"
+    - "revenue_{day\\ 1} = revenue_{day\\ 2}"
+    - "price_{day\\ 1} * amount_{day\\ 1} = price_{day\\ 2} * amount_{day\\ 2}"
+    - "0.60 * 2 = price_{day\\ 2} * 3"
+    - price_{day\\ 2} = 0.40
+
+47: 
+  answer: A
+  hints:
+    - "\\text{Desired scenario: As many workers that want A are at A, as many want B are at B}"
+    - "Positions\\ at\\ A = 50 * 40\\% = 20"
+    - "Positions\\ at\\ B = 50 * 60\\% = 30"
+    - "Workers\\ that\\ want\\ A = 50 * 70\\% = 35"
+    - "Workers\\ that\\ want\\ B = 50 * 30\\% = 15"
+    - "\\text{Ideal scenario for workers that want A: 20 happy workers at A, 15 unhappy at B}"
+    - "\\text{Ideal scenario for workers that want B: 15 happy workers at B, 0 unhappy at A} "
+    - "\\text{Total 15 unhappy workers} "
+
+48: 
+  answer: C
+  hints:
+    - "total\\ clips = \\frac{2\\ cases}{} * \\frac{c\\ cartons}{1\\ case} * \\frac{b\\ boxes}{1\\ carton} * \\frac{100\\ clips}{1\\ box}"
+    - "200bc"
+
+49:
+  answer: B
+  hints:
+    - "First 10 multiples of 5 are evenly spaced"
+    - "In an evenly spaced set, median = mean"
+    - "M - m = 0"    
+
+50: 
+  answer: A
+  hints:
+    - "distance = speed * time"
+    - "y = speed * 11"
+    - "speed = y / 11"
+    - "distance = speed * time"    
+    - "x = \\frac{y}{11} * time"
+    - "time = \\frac{11x}{y}"
+    
+    
+    
+    
+    
     
