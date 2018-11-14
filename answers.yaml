@@ -387,9 +387,9 @@
 46: 
   answer: D
   hints:
-    - "\\text{Day 1: } amount\\ orangeade = 1\\ amount\ \ OJ + 1\\ amount \\water"
+    - "\\text{Day 1: } amount\\ orangeade = 1\\ amount\\ OJ + 1\\ amount\\ water"
     - "= 2\\ amount\\ orangeade"
-    - "\\text{Day 2: } amount\\ orangeade = 1\\ amount\ \ OJ + 2\\ amount \\water"
+    - "\\text{Day 2: } amount\\ orangeade = 1\\ amount\\ OJ + 2\\ amount\\ water"
     - "= 3\\ amount\\ orangeade"
     - "revenue = price * amount"
     - "revenue_{day\\ 1} = revenue_{day\\ 2}"
