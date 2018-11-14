@@ -66,10 +66,10 @@
     - "\\frac{7}{6}"
 
 10:
-  answer: E
+  answer: A
   hints:
-    - "\\frac{1}{0.25}"
-    - "4"
+    - "\\frac{1}{-0.25}"
+    - "-4"
 
 11:
   answer: D
@@ -211,7 +211,6 @@
     - "x = 4, \\underline{x = -7}"
      
 27:
-  answer: B
   hints:
     - "x(2x + 1) = 0 ~~~ \\rightarrow ~~~ x = 0, 2x + 1 = 0"
     - "x = 0, x = \\frac{-1}{2}"
@@ -241,29 +240,99 @@
     - "x - 3 < 7 ~~~ \\rightarrow ~~~ x < 10"
     - "-3 > x > 10"
     
-#31:
-#  answer: D
-#  type: data sufficiency
-#  hints:
-#    - "1) ~ x = -|x| ~~~ \\rightarrow ~~~ -x = |x| ~~~ \\rightarrow ~~~ x \\leq 0"
-#    - "\\text{1 is insufficient}"
-#    - "2) ~ x^2 = 4 ~~~ \\rightarrow ~~~ x = \\pm2"
-#    - "\\text{2 is insufficient}"
-#    - "1\\&2) ~ x \\leq 0 \\text{ and } x = \\pm2"
-#    - "\\text{Only possible solution: } x = -2"
-#    - "\\text{1 and 2 is sufficient}"
+31:
+  answer: D
+  type: data_sufficiency
+  hints:
+    - "1) ~ x = -|x| ~~~ \\rightarrow ~~~ -x = |x| ~~~ \\rightarrow ~~~ x \\leq 0"
+    - "\\text{1 is insufficient}"
+    - "2) ~ x^2 = 4 ~~~ \\rightarrow ~~~ x = \\pm2"
+    - "\\text{2 is insufficient}"
+    - "1\\&2) ~ x \\leq 0 \\text{ and } x = \\pm2"
+    - "\\text{Only possible solution: } x = -2"
+    - "\\text{1 and 2 is sufficient}"
 
-#32:
-#  type: data sufficiency
-#  answer: C
-#  hints:
-#    - "\\text{Original question: } sqrt[3]{w} = ?"
-#    - "1) ~ sqrt[5]{w} = 64 ~~~ \\rightarrow ~~~ w = 64^5"
-#    - "sqrt[3]{w} = sqrt[3]{64^5}"
-#    - "\\text{1 is sufficient}"
-#    - "2) ~ sqrt[15]{w} = 4 ~~~ \\rightarrow ~~~ w = 4^15"
-#    - "sqrt[3]{w} = sqrt[3]{4^15}"
-#    - "\\text{2 is also sufficient, so either alone is sufficient.}"
+32:
+  type: data_sufficiency
+  answer: C
+  hints:
+    - "\\text{Original question: } sqrt[3]{w} = ?"
+    - "1) ~ sqrt[5]{w} = 64 ~~~ \\rightarrow ~~~ w = 64^5"
+    - "sqrt[3]{w} = sqrt[3]{64^5}"
+    - "\\text{1 is sufficient}"
+    - "2) ~ sqrt[15]{w} = 4 ~~~ \\rightarrow ~~~ w = 4^15"
+    - "sqrt[3]{w} = sqrt[3]{4^15}"
+    - "\\text{2 is also sufficient, so either alone is sufficient.}"
     
+33:
+  type: data_sufficiency
+  answer: B
+  hints:
+    - "1) ~ n^2 + n - 6 = 0 ~~~ \\rightarrow ~~~ (n + 3)(n - 2) = 0"
+    - "n = -3, n = -2 \\text{ so 1 is insufficient}"
+    - "2) 2^{2n} = 16 ~~~ \\rightarrow ~~~ 2^{2n} = 2^4"
+    - "2n = 4 ~~~ \\rightarrow ~~~ n = 2"
+    - "\\text{2 is sufficient}"
+    
+34:
+  type: data_sufficiency
+  answer: A
+  hints:
+    - "1) ~ S_298 = -616 \\text{ and each element is two smaller than the element before. }"
+    - "S_293 = -606, ~ S_294 = -608, ~ S_295 = -610, ~ S_296 = -612, ~ S_297 = -614, ~ S_298 = -616"
+    - "\\text{1 is sufficient}"
+    - "2) ~ S_0 = 22"
+    - "\\text{Difference between consecutive numbers is unknown, so 2 is insufficient}"
      
-  
+35:
+  type: data_sufficiency
+  answer: A
+  hints:
+    - "1) ~ 9x < 10x \\text{ only possible when x is less than zero, so it is negative.}"
+    - "\\text{1 is sufficient}"
+    - "2) ~ x + 3 > 0 ~~~ \\rightarrow ~~~ x > -3"
+    - "\\text{x can be 2, e.g. positive, or -1, e.g. negative}"
+    - "\\text{2 is insufficient}"
+     
+36:
+  answer: C
+  hints:
+    - "\\text{Car X: } \\frac{12000 \\text{ miles}}{} * \\frac{1 \\text{ gallon}}{25.0 \\text{miles}} = 480 \\text{ gallons}"  
+    - "\\text{Car Y: } \\frac{12000 \\text{ miles}}{} * \\frac{1 \\text{ gallon}}{12.0 \\text{miles}} = 1000 \\text{ gallons}"      
+    - "1000 - 480 = 520"    
+
+37:
+  answer: A
+  hints:
+    - "average weight = total weight / number of packages"
+    - "total weight = 8 * 12\\frac{3}{8} + 4 * 15\\frac{1}{4}"
+    - "total weight = 8 * \\frac{99}{8} + 4 * \\frac{61}{4}"
+    - "total weight = 160"
+    - "number of packages = 12"
+    - "\\frac{190}{12} = 13\\frac{1}{3}"
+    
+38:
+  answer: C
+  hints:
+    - "1 + 2 + 3 + 4 .. + 52"
+    - "\\text{Sum of series: } "number of terms * \\frac{first + last}{2}
+    - "52 * \\frac{1 + 52}{2}"
+    - "= 1378"
+
+39:
+  answer: E
+  hints:
+    - "average = total score / number of tests"
+    - "\\text{With 4 tests: } 78 = \\frac{total}{4}"
+    - "total = 312"
+    - "\\text{With 5 tests: } 80 = \\frac{312 + last score}{5}
+    - "400 = 312 + last score"
+    - "last score = 88"
+    
+40:
+  answer: B
+  hints:
+    - "distance = speed * time"
+    - "y = x * time"
+    - "time = \\frac{y}{x}"
+    

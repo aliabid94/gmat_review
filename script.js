@@ -1,4 +1,4 @@
-const NUM_QUESTIONS = 15
+const NUM_QUESTIONS = 39
 const REWARD_RATE = 5
 selected = {}
 cuteness = {}
@@ -27,11 +27,11 @@ $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.ya
             </div>
             <div class='answers'>
               <div class='ui vertical buttons'>
-                <button class='ui button fluid choice ${correct_answer == "A" ? "correct" : ""}'>A</button>
-                <button class='ui button fluid choice ${correct_answer == "B" ? "correct" : ""}'>B</button>
-                <button class='ui button fluid choice ${correct_answer == "C" ? "correct" : ""}'>C</button>
-                <button class='ui button fluid choice ${correct_answer == "D" ? "correct" : ""}'>D</button>
-                <button class='ui button fluid choice ${correct_answer == "E" ? "correct" : ""}'>E</button>
+                <button class='ui button fluid choice ${correct_answer == "A" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Statement 1 only" : "A"}</button>
+                <button class='ui button fluid choice ${correct_answer == "B" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Statement 2 only" : "B"}</button>
+                <button class='ui button fluid choice ${correct_answer == "C" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Either Statement 1 or 2" : "C"}</button>
+                <button class='ui button fluid choice ${correct_answer == "D" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Statement 1 & 2 together" : "D"}</button>
+                <button class='ui button fluid choice ${correct_answer == "E" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Together insufficient" : "E"}</button>
               </div>
             </div>
           </div>
