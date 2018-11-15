@@ -444,14 +444,14 @@
     - "\\text{2 is insufficient. 1 formula, 2 variables.}" 
     - "1\\&2) O = 2G + 20 \\\\ G = 2150 - \\frac{5}{6}O"
     - "O = 2(2150 - \\frac{5}{6}O) + 2"
-    - "\\text{O can be solved. 1 & 2 together is sufficient.}" 
+    - "\\text{O can be solved. 1 \\& 2 together is sufficient.}" 
             
 52:
   answer: B
   hints:
     - "total\\ rate\\ increasing = rate\\in - rate\\ out"
     - "\\text{1) Gives no information about rate of flow. Insufficient.}"
-    - "2) total\\ rate\\ increasing = \\frac{10 \\gallon}{1\\ min} - \\frac{10 \\gallon}{2.5\\ min}"
+    - "2) total\\ rate\\ increasing = \\frac{10\\ gallon}{1\\ min} - \\frac{10\\ gallon}{2.5\\ min}"
     - "\\text{2 can be solved. Sufficient.}"
 
 53:
@@ -473,7 +473,7 @@
   hints:
     - "\\text{Statement 1 tells nothing about biology students. Insufficient.}"
     - "\\text{Statement 2 tells nothing about chemistry students. Insufficient.}"
-    - "\\text{Statement 1 & 2 tells nothing about overlapping students or other students Insufficient.}"
+    - "\\text{Statements 1 \\& 2 together tell us nothing about overlapping / other students. Insufficient.}"
 
 55:
   answer: B
@@ -525,7 +525,7 @@
   answer: C
   hints: 
     - "\\text{Call C the bottom right corner. ACB is a right triangle.}"
-    - "\\(overline{CB})^2 + (\\overline{AC})^2 = (\\overline{AB})^2"
+    - "(\\overline{CB})^2 + (\\overline{AC})^2 = (\\overline{AB})^2"
     - "5^2 + (\\overline{AC})^2 = 13^2"
     - "\\overline{AC} = 12"
     - "area\\ of\\ trapezoid = base * \\frac{height_1 + height_2}{2})"
@@ -539,7 +539,7 @@
     - "\\text{The height is the triangle side opposite to the 60 angle.}"
     - "\\text{The base is the triangle side opposite to the 30 angle.}"
     - "\\text{The ratio of sides in a 30-60-90 triangle is: } a : a*sqrt{3} : 2a"
-    - "2a = 70, a = 35 ~~~ \\right arrow ~~~  35 : 35sqrt{3} : 70"
+    - "2a = 70, a = 35 ~~~ \\rightarrow ~~~  35 : 35sqrt{3} : 70"
     - "\\text{Add height and 7 ft elevation: } 35sqrt{3} + 7"
 
 62:
