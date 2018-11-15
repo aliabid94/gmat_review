@@ -227,11 +227,11 @@
     - "48"
     
 29:
-  answer: A
+  answer: E
   hints:
     - "x + 1 = 2x - 2"
-    - "2x - x = 1 - 2"
-    - "x = -1"
+    - "2x - x = 1 + 2"
+    - "x = 3"
 
 30:
   answer: A
@@ -708,7 +708,7 @@
 79:
   answer: B
   hints:
-    - "\\text{Number of ways to pick two letters from n letters (order doesn't matter): } \frac{n!}{(n-2)!2!}"
+    - "\\text{Number of ways to pick two letters from n letters (order doesn't matter): } \\frac{n!}{(n-2)!2!}"
     - "\\text{A) 4 single letter codes (a, b, c, d) and 4! / (2! * 2!)  = 6 double codes (ab, ac, ad, bc, bd, cd) }"
     - "4 + 6 = 10 \\text{ isn't enough}"
     - "\\text{B) 5 single letter codes and 5! / (3! * 2!)  = 10 double codes (ab, ac, ad, bc, bd, cd) }"
