@@ -451,7 +451,7 @@
   answer: B
   type: data_sufficiency
   hints:
-    - "total\\ rate\\ increasing = rate\\in - rate\\ out"
+    - "total\\ rate\\ increasing = rate\\ in - rate\\ out"
     - "\\text{1) Gives no information about rate of flow. Insufficient.}"
     - "2) ~ total\\ rate\\ increasing = \\frac{10\\ gallon}{1\\ min} - \\frac{10\\ gallon}{2.5\\ min}"
     - "\\text{2 can be solved. Sufficient.}"
@@ -700,7 +700,7 @@
   answer: A
   hints:
     - "\\text{Least common multiple of 1, 2, 3, 4, 5, 6, 7, so prime factor}"
-    - "2 = 2^1, ~ 3=3^1, ~ 4 - 2^2, ~ 5 = 5^1, ~ 6 = 2^1 * 3^1, 7 = 7^1"
+    - "2 = 2^1, ~ 3=3^1, ~ 4 = 2^2, ~ 5 = 5^1, ~ 6 = 2^1 * 3^1, 7 = 7^1"
     - "\\text{Least common multiple takes largest exponent for each base}"
     - "least\\ common\\ multiple = 2^2 * 3^1 * 5^1 * 7^1"
     - "= 420"
