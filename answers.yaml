@@ -260,8 +260,8 @@
     - "1) ~ \\sqrt[5]{w} = 64 ~~~ \\rightarrow ~~~ w = 64^5"
     - "\\sqrt[3]{w} = \\sqrt[3]{64^5}"
     - "\\text{1 is sufficient}"
-    - "2) ~ \\sqrt[15]{w} = 4 ~~~ \\rightarrow ~~~ w = 4^15"
-    - "\\sqrt[3]{w} = \\sqrt[3]{4^15}"
+    - "2) ~ \\sqrt[15]{w} = 4 ~~~ \\rightarrow ~~~ w = 4^{15}"
+    - "\\sqrt[3]{w} = \\sqrt[3]{4^{15}}"
     - "\\text{2 is also sufficient, so either alone is sufficient.}"
     
 33:
@@ -402,13 +402,13 @@
 47: 
   answer: A
   hints:
-    - "\\text{Desired scenario: As many workers that want A are at A, as many want B are at B}"
+    - "\\text{As many workers that want A are at A, as many want B are at B}"
     - "Positions\\ at\\ A = 50 * 40\\% = 20"
     - "Positions\\ at\\ B = 50 * 60\\% = 30"
     - "Workers\\ that\\ want\\ A = 50 * 70\\% = 35"
     - "Workers\\ that\\ want\\ B = 50 * 30\\% = 15"
-    - "\\text{Ideal scenario for workers that want A: 20 happy workers at A, 15 unhappy at B}"
-    - "\\text{Ideal scenario for workers that want B: 15 happy workers at B, 0 unhappy at A} "
+    - "\\text{Optimize for workers that want A: 20 happy workers at A, 15 unhappy at B}"
+    - "\\text{Optimize for workers that want B: 15 happy workers at B, 0 unhappy at A} "
     - "\\text{Total 15 unhappy workers} "
 
 48: 
@@ -436,26 +436,29 @@
     
 51:
   answer: C 
+  type: data_sufficiency
   hints:
-    - "1) ~ O = 2G + 20"    
+    - "1) ~ O= 2G + 20"    
     - "\\text{1 formula, 2 variables. 1 is insufficient.}" 
     - "2) ~ 15O + 18G = 38700"
     - "15O + 18G = 38700 ~~~ \\rightarrow ~~~ 18G = 38700 - 15O ~~~ \\rightarrow ~~~ G = 2150 - \\frac{5}{6}O"
     - "\\text{2 is insufficient. 1 formula, 2 variables.}" 
-    - "1\\&2) O = 2G + 20 \\\\ G = 2150 - \\frac{5}{6}O"
+    - "1\\&2) ~ O = 2G + 20 \\\\ G = 2150 - \\frac{5}{6}O"
     - "O = 2(2150 - \\frac{5}{6}O) + 2"
     - "\\text{O can be solved. 1 \\& 2 together is sufficient.}" 
             
 52:
   answer: B
+  type: data_sufficiency
   hints:
     - "total\\ rate\\ increasing = rate\\in - rate\\ out"
     - "\\text{1) Gives no information about rate of flow. Insufficient.}"
-    - "2) total\\ rate\\ increasing = \\frac{10\\ gallon}{1\\ min} - \\frac{10\\ gallon}{2.5\\ min}"
+    - "2) ~ total\\ rate\\ increasing = \\frac{10\\ gallon}{1\\ min} - \\frac{10\\ gallon}{2.5\\ min}"
     - "\\text{2 can be solved. Sufficient.}"
 
 53:
   answer: C
+  type: data_sufficiency
   hints:
     - "total\\ income = hours\\ worked * hourly\\ wage"
     - "1) ~ 225 = 30 * hourly\\ wage"
@@ -470,13 +473,15 @@
   
 54:
   answer: E
+  type: data_sufficiency
   hints:
     - "\\text{Statement 1 tells nothing about biology students. Insufficient.}"
     - "\\text{Statement 2 tells nothing about chemistry students. Insufficient.}"
-    - "\\text{Statements 1 \\& 2 together tell us nothing about overlapping / other students. Insufficient.}"
+    - "\\text{Statements 1 \\& 2 tell us nothing about students in neither. Insufficient.}"
 
 55:
   answer: B
+  type: data_sufficiency
   hints:
     - "\\text{1 clearly insufficient, n can be any value over 12.}"
     - "\\text{The numbers ordered, excluding n: } (9, 12, 15, 20)"
@@ -528,7 +533,7 @@
     - "(\\overline{CB})^2 + (\\overline{AC})^2 = (\\overline{AB})^2"
     - "5^2 + (\\overline{AC})^2 = 13^2"
     - "\\overline{AC} = 12"
-    - "area\\ of\\ trapezoid = base * \\frac{height_1 + height_2}{2})"
+    - "area\\ of\\ trapezoid = base * \\frac{height_1 + height_2}{2}"
     - " = 12 * \\frac{2 + 5}{2}) = 42"
 
 61:
@@ -538,8 +543,8 @@
     - "\\text{The ladder is the hypotenuse opposite to the 90 angle.}"
     - "\\text{The height is the triangle side opposite to the 60 angle.}"
     - "\\text{The base is the triangle side opposite to the 30 angle.}"
-    - "\\text{The ratio of sides in a 30-60-90 triangle is: } a : a*sqrt{3} : 2a"
-    - "2a = 70, a = 35 ~~~ \\rightarrow ~~~  35 : 35sqrt{3} : 70"
+    - "\\text{The ratio of sides in a 30-60-90 triangle is: } a : a*\\sqrt{3} : 2a"
+    - "2a = 70, a = 35 ~~~ \\rightarrow ~~~  35 : 35\\sqrt{3} : 70"
     - "\\text{Add height and 7 ft elevation: } 35sqrt{3} + 7"
 
 62:
@@ -565,7 +570,7 @@
 64:
   answer: D
   hints:
-    - "\\text{A full 360 rotation around P would bring B back to its original ocation.}"
+    - "\\text{A full 360 rotation around P would bring B back to its original location.}"
     - "\\text{A one-third of full clockwise rotation would bring it to C.}"
     - "\\text{A two-third of full clockwise rotation would bring it to A.}"
     - "360 * \\frac{2}{3} = 240"
@@ -578,5 +583,96 @@
     - "\\angle PSR = 180 - \\angle QPS = 180 - 40 = 140"
     - "2y = 140 ~~~ \\rightarrow ~~~ y = 70"
     - "y - x = 30"
+    
+66:
+  answer: E
+  hints:
+    - "\\text{If function y(x) is symmetric at x = 2: } y(2 + n) = y(2 - n)"
+    - "\\text{For example: y(2 + 6) = y (2 - 6) ~~~ \\rightarrow ~~~ y(8) = y(-4)}"
+    - "y(2 + 1) = y(2 - 1) ~~~ \\rightarrow ~~~ y(3) = y(1)"
+    "y(3) = 1"
+
+67:
+  answer: D
+  hints:
+    - "volume\\ of\\ box = l*w*h = 10"
+    - "volume\\ of\\ new\\ box = (2l)*(2w)*(2h)"
+    - "= 8 * (l*w*h)"
+    - "= 8 * 10 = 80"
+    
+68:
+  answer: C
+  hints:
+    - "angle\\ of\\ unshaded\\ region = 150 + 150 = 300"
+    - "angle\\ of\\ circle = angle\\ of\\ shaded\\ region + angle\\ of\\ unshaded\\ region"
+    - "360 = angle\\ of\\ shaded\\ region + 300"
+    - "angle\\ of\\ shaded\\ region = 60"
+    - "angle\\ of\\ shaded\\ region / angle\\ of\\ circle = \\frac{60}{360} = \\frac{1}{6}"
+
+69:
+  answer: E
+  hints:
+    - "\\text{X coordinate: } 7"
+    - "\\text{Y coordinate: } -5"
+    - "(7, -5)"
+    
+70: 
+  answer: A
+  type: data_sufficiency
+  hints: 
+    - "sum\\ of\\ triangle\\ angles = 180"
+    - "x + y + z = 180"
+    - "1) ~ (x + y) + z = 180 ~~~ \\rightarrow ~~~ 139 + z = 180"
+    - "\\text{We can calculate z. 1 is sufficient.}"
+    - "2) ~ x + (y + z) = 180 ~~~ \\rightarrow ~~~ x + 108 = 180"
+    - "x = 72"
+    - "\\text{If x is 72, and y + z is 108, we can have mulitple values for z.}"
+    - "\\text{2 is insufficient}
+    
+71:
+  answer: A
+  type: data_sufficiency
+  hints: 
+    - "\\text{In a triangle, largest side is opposite to largest angle}"
+    - "1) ~ \\overline{PR} = x + 3 > \\overline{QR} = x + 2 > \\overline{PQ} = x"
+    - "\\text{PR is largest side, so angle Q is largest angle. 1 is sufficient.}"
+    - "2) ~ \\overline{PR} = y, ~ \\overline{QR} = 4 > \\overline{PQ} = 2"
+    - \\text{PR can be 5 (largest), or it can be 3 (not largest)}
+    - \\text{Unknown largest side means unknown largest angle. 2 is insufficient.}
+
+72:
+  answer: E
+  type: data_sufficiency
+  hints:
+    - "\\text{Imagine the painted section to be its own little cylinder.}"
+    - "surface\\ area\\ of\\ cylinder\\ sides = 2\\pi rh"
+    - "1) ~ h = 0.5 \\text{ - radius still unknown}"
+    - "\\text{1 is insufficient}"
+    - "\\text{2 tells us neither height or radius. Also insufficient.}"
+    - "\\text{1 & 2 together still doesn't give radius, insufficient.}"
+    
+73:
+   answer: D
+   hints:
+     - "\\text{1) P and Q have same x coordinate means PQ is perfectly vertical.}"
+     - "\\text{We don't know the slope of PR, so 1 is insufficient}"
+     - "\\text{1) P and R have same y coordinate means PR is perfectly horizontal.}"
+     - "\\text{We don't know the slope of PQ, so 2 is insufficient}"
+     - "\\text{1 \\& 2) Together, PQ is horizontal, and PR is vertical}"
+     - "\\text{Angle PQR is 90 degrees, 1 \\& 2 is sufficient together}"
+
+74: 
+  answer: A
+  hints:
+    - "height\\ of\\ staircase = number\\ of\\ steps * step\\ height"
+    - "1) ~ 9 = number\\ of\\ steps * \\frac{3}{4}"
+    - "\\text{We can determine number of steps, 1 is sufficient}"
+    - "\\text{2 tells us no new information we need. 2 is insufficient.}"    
+    
+    
+    
+    
+    
+    
     
     
