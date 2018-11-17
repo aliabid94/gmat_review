@@ -6,12 +6,12 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   <body>
+    <div class="ui message error">&nbsp</div>
     <div class="editor">
       <textarea class="input"></textarea><!--
    --><div class="output"></div>
     </div>
     <button class="ui button copy">Copy to Clipboard</button>
-    
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -24,37 +24,72 @@
     <script>
       var old_data = {}
       var new_data = {}
+      function error(e) {
+        if (e) {
+          $(".error").text(e)
+          $(".output").css('opacity', '0.5')
+        } else {
+          $(".error").html("&nbsp")
+          $(".output").css("opacity", "1")
+        }
+      }
+      function load_problem(problem_number) {
+        var content =  render_to_string(problem_number-1, problem_number, new_data[problem_number], "")
+        var target = $(`.problem[num="${problem_number}"]`)
+        if (target.get(0)) {
+          target.html(content)
+          console.log("updated " + problem_number);
+        } else {
+          $(".output").append(`<div class='problem' num="${problem_number}">${content}</div>`);
+          console.log("added " + problem_number);
+        }
+      }
       function load_yaml(data) {
         data = double_slash(data)
         try {
           new_data = YAML.parse(data)
         } catch(e) {
-          $(".problem").hide()
-          $(".output").append(`<div class="ui message error">YAML parse failure: ${e}</div>`)
+          error(e)
           return
         }
-        $(".error").remove()
+        error(false)
+        var change_answer = false
         if (!_.isEqual(old_data, new_data)) {
-          var problem_numbers = Object.keys(new_data).map(x => parseInt(x)).sort()
-          var old_problem_numbers = Object.keys(old_data).map(x => parseInt(x)).sort()
+          var problem_numbers = Object.keys(new_data).map(x => parseInt(x) || x).sort()
+          var old_problem_numbers = Object.keys(old_data).map(x => parseInt(x) || x).sort()
           for (var i = 0; i < old_problem_numbers.length; i++) {
             var problem_number = old_problem_numbers[i]
             if (problem_numbers.indexOf(problem_number) < 0) {
-              $(`.problem[num=${problem_number}]`).remove();
+              $(`.problem[num="${problem_number}"]`).remove();
+              console.log("removed " + problem_number);
             } else {
-              if (!_isEqual(new_data[problem_number], old_data[problem_number])) {
-                $(`.problem[num=${problem_number}]`).html(render_to_string(question_number-1, question_number, new_data[problem_number], ""))
+              if (!_.isEqual(new_data[problem_number], old_data[problem_number])) {
+                change_answer = true
+                try {
+                  load_problem(problem_number)
+                } catch (e) {
+                  error(e)
+                }
               }
             }
           }
           for (var i = 0; i < problem_numbers.length; i++) {
             var problem_number = problem_numbers[i]
-            if (old_problem_numbers.indexOf(problem_number) < 0 && new_data[problem_number]["answer"]) {
-              $(".output").append(`<div class='problem' num="${problem_number}">${render_to_string(problem_number-1, problem_number, new_data[problem_number], "")}</div>`);
+            if (old_problem_numbers.indexOf(problem_number) < 0) {
+              change_answer = true
+              try {
+                load_problem(problem_number)
+              } catch(e) {
+                error(e)
+              }
             }
           }          
         }
         old_data = new_data;
+        if (change_answer) {
+          $(".choice").removeClass("blue")
+          $(".choice.correct").addClass("blue")
+        }
       }
       $('textarea').bind('input propertychange', function() {
         data = this.value;
@@ -62,16 +97,31 @@
       });
       $(".copy").click(function(){
         alert("Copied to clipboard.")
-        $("textarea").select();
+        $(".input").select();
         document.execCommand('copy');
-        $("textarea").blur();
+        $(".input").blur();
       });
       control_capture("s", function() {
         $(".copy").click()
       })
-      $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.yaml", function(data) {
+      $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers-mini.yaml", function(data) {
         $("textarea").text(data);
         load_yaml(data)
+      });
+      $(".input").bind("keydown click focus", function() {
+        var lines = this.value.substr(0, this.selectionStart).split("\n")
+        for (var i = lines.length - 1; i >= 0; i--) {
+          var start_regex = /^([0-9]+):/
+          var matches = lines[i].match(start_regex)
+          if (matches) {
+            var num = matches[1]
+            var target = $(`.problem[num=${num}]`)
+            if (target.get(0)) {
+              $('.output').scrollTop($('.output').scrollTop() + target.position().top - $('.output').position().top)
+            }
+            break;
+          }
+        }
       });
       autoindent("textarea");
     </script>

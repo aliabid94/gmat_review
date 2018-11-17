@@ -4,7 +4,6 @@ body {
 .katex { font-size: 1em !important; } 
 .problem, .check_answers, .reward {
   max-width: 520px;
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -51,9 +50,9 @@ body {
 
 /* EDITOR */
 .editor {
-  padding: 30px 0px;
+  padding-bottom: 15px;
   width: 100%;
-  height: calc(100% - 90px);
+  height: calc(100% - 140px);
   
 }
 .input, .output {
@@ -63,8 +62,9 @@ body {
   height: 100%;
 }
 .output {
-  padding-left: 30px;
+  padding-left: 15px;
   overflow-y: scroll;
+  background-repeat: repeat;
 }
 textarea {
   width: 100%;
@@ -73,6 +73,9 @@ textarea {
   font-family: monospace !important;
 }
 .editor .add_hint {
-  display: none;
+  display: none !important;
+}
+.error {
+  margin-top: 20px !important
 }
 
