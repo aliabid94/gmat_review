@@ -10,6 +10,7 @@ function getRandomSample(range, size) {
     }
     return shuffled.slice(min);
 }
+
 function autoindent(textarea) {
   $(textarea).keydown(function(e)
   {
@@ -83,8 +84,16 @@ function autoindent(textarea) {
   });
 }
 
-double_slash(str) {
-  return str.replace("\\", "\\\\")
+function double_slash(str) {
+  return str.replace(/\\/g, "\\\\")
 }
 
+function control_capture(letter, callback) {
+  $(window).bind('keydown', function(event) {
+      if ((event.ctrlKey || event.metaKey) && String.fromCharCode(event.which).toLowerCase() == letter) {
+        event.preventDefault();
+        callback()
+      }
+  })
+}
 

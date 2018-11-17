@@ -62,10 +62,15 @@ body {
   width: 50%;
   height: 100%;
 }
+.output {
+  padding-left: 30px;
+  overflow-y: scroll;
+}
 textarea {
   width: 100%;
   height: 100%;
-  white-space: nowrap; 
+  font-size: 14px !important;
+  font-family: monospace !important;
 }
 .editor .add_hint {
   display: none;

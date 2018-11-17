@@ -10,7 +10,7 @@
       <textarea class="input"></textarea><!--
    --><div class="output"></div>
     </div>
-    <button class="ui button">Copy to Clipboard</button>
+    <button class="ui button copy">Copy to Clipboard</button>
     
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
@@ -18,11 +18,60 @@
     <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script src="util.js"></script>
     <script src="script.js"></script>
     <script>
+      var old_data = {}
+      var new_data = {}
+      function load_yaml(data) {
+        data = double_slash(data)
+        try {
+          new_data = YAML.parse(data)
+        } catch(e) {
+          $(".problem").hide()
+          $(".output").append(`<div class="ui message error">YAML parse failure: ${e}</div>`)
+          return
+        }
+        $(".error").remove()
+        if (!_.isEqual(old_data, new_data)) {
+          var problem_numbers = Object.keys(new_data).map(x => parseInt(x)).sort()
+          var old_problem_numbers = Object.keys(old_data).map(x => parseInt(x)).sort()
+          for (var i = 0; i < old_problem_numbers.length; i++) {
+            var problem_number = old_problem_numbers[i]
+            if (problem_numbers.indexOf(problem_number) < 0) {
+              $(`.problem[num=${problem_number}]`).remove();
+            } else {
+              if (!_isEqual(new_data[problem_number], old_data[problem_number])) {
+                $(`.problem[num=${problem_number}]`).html(render_to_string(question_number-1, question_number, new_data[problem_number], ""))
+              }
+            }
+          }
+          for (var i = 0; i < problem_numbers.length; i++) {
+            var problem_number = problem_numbers[i]
+            if (old_problem_numbers.indexOf(problem_number) < 0 && new_data[problem_number]["answer"]) {
+              $(".output").append(`<div class='problem' num="${problem_number}">${render_to_string(problem_number-1, problem_number, new_data[problem_number], "")}</div>`);
+            }
+          }          
+        }
+        old_data = new_data;
+      }
+      $('textarea').bind('input propertychange', function() {
+        data = this.value;
+        load_yaml(data)
+      });
+      $(".copy").click(function(){
+        alert("Copied to clipboard.")
+        $("textarea").select();
+        document.execCommand('copy');
+        $("textarea").blur();
+      });
+      control_capture("s", function() {
+        $(".copy").click()
+      })
       $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers.yaml", function(data) {
         $("textarea").text(data);
+        load_yaml(data)
       });
       autoindent("textarea");
     </script>

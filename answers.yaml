@@ -403,10 +403,10 @@
   answer: A
   hints:
     - "\text{As many workers that want A are at A, as many want B are at B}"
-    - "Position\S at\ A = 50 * 40\% = 20"
-    - "Position\S at\ B = 50 * 60\% = 30"
-    - "Worker\S that\ want\ A = 50 * 70\% = 35"
-    - "Worker\S that\ want\ B = 50 * 30\% = 15"
+    - "Positions at\ A = 50 * 40\% = 20"
+    - "Positions at\ B = 50 * 60\% = 30"
+    - "Workers that\ want\ A = 50 * 70\% = 35"
+    - "Workers that\ want\ B = 50 * 30\% = 15"
     - "\text{Optimize for workers that want A: 20 happy workers at A, 15 unhappy at B}"
     - "\text{Optimize for workers that want B: 15 happy workers at B, 0 unhappy at A} "
     - "\text{Total 15 unhappy workers} "
@@ -460,12 +460,12 @@
   answer: C
   type: data_sufficiency
   hints:
-    - "total\ income = hour\S worked * hourly\ wage"
+    - "total\ income = hours worked * hourly\ wage"
     - "1) ~ 225 = 30 * hourly\ wage"
     - "hourly\ wage = 7.5"
-    - "new\ total\ income = new\ hour\S worked * new\ hourly\ wage"
-    - "225 = new\ hour\S worked * (7.5 + 1.5)"
-    - "new\ hour\S worked = 25"
+    - "new\ total\ income = new\ hours worked * new\ hourly\ wage"
+    - "225 = new\ hours worked * (7.5 + 1.5)"
+    - "new\ hours worked = 25"
     - "\text{5 fewer hours worked. 1 is sufficient.}"
     - "2) ~ hourly\ wage + 1.50 = hourly\ wage * 1.20"
     - "hourly\ wage * 0.2 = 1.5 ~~~ \rightarrow ~~~ hourly\ wage = 7.5"
@@ -751,10 +751,10 @@
 84:
   answer: A
   hints:
-    - "number\ of\ integer\S between\ a\ and\ b = b - a + 1"
+    - "number\ of\ integers between\ a\ and\ b = b - a + 1"
     - "total\ number\ of\ tickets = 350 - 101 + 1 = 250"
     - "\text{range of numbers with hundreds digit of 2: } 200 - 299"
-    - "number\ of\ ticket\S = 299 - 200 + 1 = 100"
+    - "number\ of\ tickets = 299 - 200 + 1 = 100"
     - "\frac{100}{250} = \frac{2}{5}"
 
 85:
@@ -785,7 +785,7 @@
   answer: B
   hints:
     - "\text{Number of ways to pick one number from A, one from B: } size\ of\ A * size\ of\ B"
-    - " = 20\ pair\S of\ integers"
+    - " = 20\ pairs of\ integers"
     - "\text{Valid pairs that add to 9: } (A: 2, B: 7),  ~ (A: 3, B: 6), ~ (A: 4, B: 5), ~ (A: 5, B: 4)"
     - "\text{4 valid pairs out of 20 total pairs}"
     - "\frac{4}{20} = 0.20"
