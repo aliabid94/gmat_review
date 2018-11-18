@@ -1,3 +1,13 @@
+var seed = 1
+function random() {
+    var x = Math.sin(seed++) * 10000;
+    return x - Math.floor(x);
+}
+
+function pickRandom(array) {
+  return array[Math.floor(random() * array.length)]
+}
+
 function getRandomSample(range, size) {
     var arr = []
     for (var j = 0; j <= range; arr.push(j++)) {}
@@ -78,14 +88,14 @@ function autoindent(textarea) {
                }
                $(that).val(v.slice(0, start) + " ".repeat(indentation) + v.slice(start));
                that.selectionStart = start+indentation;
-               that.selectionEnd = start+indentation;  
+               that.selectionEnd = start+indentation;
   }, 0.01, this);
        }
   });
 }
 
 function double_slash(str) {
-  return str.replace(/\\/g, "\\\\")
+  return str.replace(/@/g, "\\text{").replace(/#/g, "}").replace(/->/g, "~~ \\rightarrow ~~").replace(/\\/g, "\\\\\\\\")
 }
 
 function control_capture(letter, callback) {
@@ -96,4 +106,3 @@ function control_capture(letter, callback) {
       }
   })
 }
-

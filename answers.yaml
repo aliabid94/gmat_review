@@ -1,13 +1,13 @@
 1:
   answer: D
-  hints:
+  solution:
     - "\sqrt{\frac{16}{81}} = \frac{\sqrt{16}}{\sqrt{81}}"
     - "n = \frac{4}{9}"
     - "\sqrt{\frac{4}{9}} = \frac{2}{3}"
 
 2:
   answer: B
-  hints:
+  solution:
     - "\frac{2.3*10^{14} \text{ in}}{} * \frac{1 \text{ km}}{3.9*10^{4} \text{ in}}"
     - "\frac{2.3}{3.9} * 10^{10} ="
     - "0.59 * 10^{10} ="
@@ -15,14 +15,14 @@
 
 3:
   answer: C
-  hints:
+  solution:
     - "\text{Fraction left for candy: } 1 - \frac{1}{2} - \frac{1}{3} - \frac{1}{10} =  \frac{1}{15}"
     - "total\ spent * \frac{1}{15} = \$6"
     - "total\ spent = \$6 * 15 = 90"
 
 4:
  answer: D
- hints: 
+ solution:
    - "\frac{1}{\frac{4}{3}} - \frac{1}{\frac{3}{2}}"
    - "\frac{3}{4} - \frac{2}{3}"
    - "\frac{9}{12} - \frac{8}{12}"
@@ -30,7 +30,7 @@
 
 5:
   answer: E
-  hints:
+  solution:
     - "total\ capacity *82\% = 138\ \text{billion}"
     - "total\ capacity = 138\ \text{billion} * \frac{100}{82} \approx 168\ \text{billion}"
     - "total\ capacity = original\ volume + extra\ capacity"
@@ -39,20 +39,20 @@
 
 6:
   answer: B
-  hints:
+  solution:
     - "\$10000 * 1.10 * 1.05 * 0.90 ="
     - "\$10395"
 
 7:
   answer: B
-  hints:
+  solution:
     - "(item\ cost - 1000) * 0.07 = \$87.50"
     - "(item\ cost - 1000) = \$1250"
     - "\$2250"
 
 8:
   answer: A
-  hints: 
+  solution:
     - "\text{Express everything in scientific notation: } \frac{3.6 * 10^{-3} * 2.8}{4 * 10^{-2} * 1 * 10^{-1} * 3 * 10^{-3}}"
     - "\text{Multiply the non-exponent parts separately: } 0.84 * \frac{10^{-3}}{10^{-2}*10^{-1}10^{-3}}"
     - "\text{Simplify the exponent fraction into a single exponent: } 0.84 * 10^3"
@@ -60,41 +60,41 @@
 
 9:
   answer: B
-  hints:
+  solution:
     - "1 - (\frac{3}{6} - \frac{4}{6})"
     - "1 - (-\frac{1}{6})"
     - "\frac{7}{6}"
 
 10:
   answer: A
-  hints:
+  solution:
     - "\frac{1}{-0.25}"
     - "-4"
 
 11:
   answer: D
-  hints:
+  solution:
     - "5000 * \frac{1}{10} - 5000 * \frac{1}{10}\% ="
     - "500 - 5000 * \frac{1}{1000}"
     - "500 - 5 = 495"
 
 12:
   answer: E
-  hints:
+  solution:
     - "150 = 30 * \frac{x}{100}"
     - "x = 150 * 100 / 30"
     - "500"
- 
+
 13:
   answer: A
-  hints:
+  solution:
     - "2 : \frac{1}{3} ~~~ \rightarrow ~~~ 2*3 : \frac{1}{3} * 3"
     - "6 : 1"
- 
+
 14:
   answer: D
-  hints:
-    - "\text{The ratio between each employees hours and the TOTAL hours worked by all is: }" 
+  solution:
+    - "\text{The ratio between each employees hours and the TOTAL hours worked by all is: }"
     - "2:3:5:6:(2+3+5+6) ~~~ \rightarrow ~~~ 2:3:5:6:\underline{16}"
     - "\text{If this employee worked the least, the ratio of his hours to total hours is } 2:16."
     - "\text{With this ratio, the total hours worked by everyone is: } 2:16 ~~~ \rightarrow ~~~ 30 : \underline{240}"
@@ -104,14 +104,14 @@
     - "\text{Only nonviable number of total hours is: } 192"
 15:
   answer: D
-  hints:
+  solution:
     - "\text{Rolls left at noon: } 40 * (1 - \frac{1}{2}) = 20"
     - "\text{Rolls left at closing: } 20 * (1 - 0.8)"
     - "= 4 \text{ Rolls left}"
-  
+
 16:
   answer: B
-  hints:
+  solution:
     - "\text{What is the smallest number where: } 1 < 5n + 5"
     - "\text{Answer: } n = 0"
     - "\text{What is the largest number where: } 5n + 5 < 25"
@@ -121,14 +121,14 @@
 
 17:
   answer: D
-  hints:
+  solution:
     - "2 = 1 + \frac{2}{y}"
     - "\frac{2}{y} = 1"
     - "y = 2"
-    
+
 18:
   answer: D
-  hints:
+  solution:
     - "\text{Simplify } 10y^2 = (x+2)(x-2) ~~~ \rightarrow ~~~ 10y^2 = x^2 - 4"
     - "\text{Simplify option A: } 30y^2 = 3x^2 - 12 ~~~ \rightarrow ~~~ 10y^2 = x^2 - 4"
     - "\text{Simplify option B: } 20y^2 = (2x-4)(x+2) ~~~ \rightarrow ~~~ 10y^2 = x^2 - 4"
@@ -137,7 +137,7 @@
 
 19:
   answer: C
-  hints:
+  solution:
     - "\text{You can convert to a double inequality, or you can try each value }"
     - "\text{Lets create double inequalities: } |y - \frac{1}{2}| < \frac{11}{2} ~~~ \rightarrow ~~~ -\frac{11}{2} < y - \frac{1}{2} < \frac{11}{2}"
     - "-\frac{10}{2} < y < \frac{12}{2}"
@@ -145,7 +145,7 @@
 
 20:
   answer: C
-  hints: 
+  solution:
     - "\text{Use this formula to factor the original equation: } a^2 - b^2 = (a+b)(a-b)"
     - "a = 3^4, b=2^4 ~~~ \rightarrow ~~~ 3^8 - 2^8 = (3^4+2^4)(3^4-2^4)"
     - "\text{Evaluate: } (81+16)(81-16) = 97 * 65"
@@ -154,7 +154,7 @@
 
 21:
   answer: A
-  hints:
+  solution:
     - "\text{In an arithmetic sequence, the difference between consecutive numbers is equal,} \\ \text{like in: } (-1, 0, 1, 2, 3) \text{ or } (5, 8, 11, 14, 17)"
     - "\text{In I., we double every number, like: } \\ (-1, 0, 1, 2, 3) ~~~ \rightarrow ~~~ (-2, 0, 2, 4, 6), or \\ (5, 8, 11, 14, 17) ~~~ \rightarrow ~~~ (10, 16, 22, 28, 34)"
     - "\text{The effect of this operation doubles the difference between numbers, } \\ \text{but the difference is equal. It is still an arithmetic sequence.}"
@@ -163,20 +163,20 @@
     - "\text{In III., we square every number, like: } \\ (-1, 0, 1, 2, 3) ~~~ \rightarrow ~~~ (1, 0, 1, 4, 9), or \\ (5, 8, 11, 14, 17) ~~~ \rightarrow ~~~ (25, 64, 121, 196, 289)"
     - "\text{The difference between consecutive numbers is not the same anymore. }"
     - "\text{Only I. and II. are still arithmetic sequences. }"
- 
+
 22:
   answer: E
-  hints: 
+  solution:
     - "\sqrt{\sqrt[3]{64 * 10^{-6}}}"
     - "\sqrt{\sqrt[3]{2^{6} * 10^{-6}}}"
     - "\sqrt{2^{2} * 10^{-2}}"
     - "2 * 10^{-1}"
     - "0.2"
-    
-    
+
+
 23:
   answer: C
-  hints:
+  solution:
     - "\frac{2^{-17}*2^{3} + 2^{-17}*2^{2} + 2^{-17}*2^{1} + 2^{-17}*2^{0}}{5}"
     - "\frac{2^{-17}*(2^{3} + 2^{2} + 2^{1} + 2^{0})}{5}"
     - "\frac{2^{-17}*15}{5}"
@@ -185,23 +185,23 @@
 
 24:
   answer: B
-  hints:
+  solution:
     - "{5^2}^n > 5^{12}"
     - "5^{2n} > 5^{12}"
     - "2n > 12"
     - "n > 6"
     - "\text{Smallest integer value of n is: } 7"
-    
+
 25:
   answer: B
-  hints:
+  solution:
     - "\sqrt{320 + 256}"
     - "\sqrt{576}"
     - "24"
-    
+
 26:
   answer: A
-  hints:
+  solution:
     - "x^2 + 3x + k = 10 \text{ when x = 4}"
     - "4^2 + 3*4 + k = 10"
     - "k = -18"
@@ -209,41 +209,41 @@
     - "x^2 + 3x - 28 = 0"
     - "(x + 7)(x - 4) = 0"
     - "x = 4, \underline{x = -7}"
-     
+
 27:
-  hints:
+  solution:
     - "x(2x + 1) = 0 ~~~ \rightarrow ~~~ x = 0, 2x + 1 = 0"
     - "x = 0, x = \frac{-1}{2}"
     - "(x + \frac{1}{2})(2x - 3) = 0 ~~~ \rightarrow ~~~ x + \frac{1}{2} = 0, 2x - 3 = 0"
     - "x = \frac{-1}{2}, x = \frac{3}{2}"
     - "\text{Only common solution is: } \frac{-1}{2}"
-    
+
 28:
   answer: D
-  hints:
+  solution:
     - "d = 0.5 \text{miles} = \frac{0.5 \text{miles}}{} * \frac{5280 \text{feet}}{1 \text{miles}} = 2640 \text{feet}"
-    - "N = \frac{20Ld}{600 + s^2} = \frac{20 * 2 * 2640}{600 + 40 ^ 2}"    
+    - "N = \frac{20Ld}{600 + s^2} = \frac{20 * 2 * 2640}{600 + 40 ^ 2}"
     - "\frac{105600}{2200}"
     - "48"
-    
+
 29:
   answer: E
-  hints:
+  solution:
     - "x + 1 = 2x - 2"
     - "2x - x = 1 + 2"
     - "x = 3"
 
 30:
   answer: A
-  hints:
+  solution:
     - "x + 5 > 2 ~~~ \rightarrow ~~~ x > -3"
     - "x - 3 < 7 ~~~ \rightarrow ~~~ x < 10"
     - "-3 > x > 10"
-    
+
 31:
   answer: D
   type: data_sufficiency
-  hints:
+  solution:
     - "1) ~ x = -|x| ~~~ \rightarrow ~~~ -x = |x| ~~~ \rightarrow ~~~ x \leq 0"
     - "\text{1 is insufficient}"
     - "2) ~ x^2 = 4 ~~~ \rightarrow ~~~ x = \pm2"
@@ -255,7 +255,7 @@
 32:
   type: data_sufficiency
   answer: C
-  hints:
+  solution:
     - "\text{Original question: } \sqrt[3]{w} = ?"
     - "1) ~ \sqrt[5]{w} = 64 ~~~ \rightarrow ~~~ w = 64^5"
     - "\sqrt[3]{w} = \sqrt[3]{64^5}"
@@ -263,57 +263,57 @@
     - "2) ~ \sqrt[15]{w} = 4 ~~~ \rightarrow ~~~ w = 4^{15}"
     - "\sqrt[3]{w} = \sqrt[3]{4^{15}}"
     - "\text{2 is also sufficient, so either alone is sufficient.}"
-    
+
 33:
   type: data_sufficiency
   answer: B
-  hints:
+  solution:
     - "1) ~ n^2 + n - 6 = 0 ~~~ \rightarrow ~~~ (n + 3)(n - 2) = 0"
     - "n = -3, n = -2 \text{ so 1 is insufficient}"
     - "2) 2^{2n} = 16 ~~~ \rightarrow ~~~ 2^{2n} = 2^4"
     - "2n = 4 ~~~ \rightarrow ~~~ n = 2"
     - "\text{2 is sufficient}"
-    
+
 34:
   type: data_sufficiency
   answer: A
-  hints:
+  solution:
     - "1) ~ S_{298} = -616 \text{ and each element is two smaller than the element before. }"
     - "S_{293} = -606, ~ S_{294} = -608, ~ S_{295} = -610, ~ S_{296} = -612, ~ S_{297} = -614, ~ S_{298} = -616"
     - "\text{1 is sufficient}"
     - "2) ~ S_{1} = 22"
     - "\text{Difference between consecutive numbers is unknown, so 2 is insufficient}"
-     
+
 35:
   type: data_sufficiency
   answer: A
-  hints:
+  solution:
     - "1) ~ 9x > 10x \text{ only possible when x is less than zero, so it is negative.}"
     - "\text{1 is sufficient}"
     - "2) ~ x + 3 > 0 ~~~ \rightarrow ~~~ x > -3"
     - "\text{x can be 2, e.g. positive, or -1, e.g. negative}"
     - "\text{2 is insufficient}"
-     
+
 36:
   answer: C
-  hints:
-    - "\text{Car X: } \frac{12000 \text{ miles}}{} * \frac{1 \text{ gallon}}{25.0 \text{miles}} = 480 \text{ gallons}"  
-    - "\text{Car Y: } \frac{12000 \text{ miles}}{} * \frac{1 \text{ gallon}}{12.0 \text{miles}} = 1000 \text{ gallons}"      
-    - "1000 - 480 = 520"    
+  solution:
+    - "\text{Car X: } \frac{12000 \text{ miles}}{} * \frac{1 \text{ gallon}}{25.0 \text{miles}} = 480 \text{ gallons}"
+    - "\text{Car Y: } \frac{12000 \text{ miles}}{} * \frac{1 \text{ gallon}}{12.0 \text{miles}} = 1000 \text{ gallons}"
+    - "1000 - 480 = 520"
 
 37:
   answer: A
-  hints:
+  solution:
     - "average\ weight = total\ weight / number\ of\ packages"
     - "total\ weight = 8 * 12\frac{3}{8} + 4 * 15\frac{1}{4}"
     - "total\ weight = 8 * \frac{99}{8} + 4 * \frac{61}{4}"
     - "total\ weight = 160"
     - "number\ of\ packages = 12"
     - "\frac{160}{12} = 13\frac{1}{3}"
-    
+
 38:
   answer: C
-  hints:
+  solution:
     - "1 + 2 + 3 + 4 .. + 52"
     - "Sum\ of\ series = number\ of\ terms * \frac{first + last}{2}"
     - "52 * \frac{1 + 52}{2}"
@@ -321,24 +321,24 @@
 
 39:
   answer: E
-  hints:
+  solution:
     - "average = total\ score / number\ of\ tests"
     - "\text{With 4 tests: } 78 = \frac{total\ score}{4}"
     - "total\ score = 312"
     - "\text{With 5 tests: } 80 = \frac{312 + last\ score}{5}"
     - "400 = 312 + last\ score"
     - "last\ score = 88"
-    
+
 40:
   answer: B
-  hints:
+  solution:
     - "distance = speed * time"
     - "y = x * time"
     - "time = \frac{y}{x}"
 
-41: 
+41:
   answer: B
-  hints:
+  solution:
     - "\text{I. means the numbers of cars sold, in order: } (2,2,3,4,6,7,8)"
     - "median = 4, \ mean = \frac{2+2+3+4+6+7+8}{7} = \frac{32}{7}"
     - "median \neq mean"
@@ -349,25 +349,25 @@
     - "\text{Evenly spaced set means: } mean = median"
     - "\text{III. only}"
 
-42: 
+42:
   answer: A
-  hints:
+  solution:
     - "yearly\ budget = 12600 ~~~ \rightarrow ~~~ monthly\ budget = 12600 / 12 = 1050"
     - "monthly\ budget = 1050 ~~~ \rightarrow ~~~ 4\ month\ budget = 1050 * 4 = 4200"
     - "4580 - 4200 = 380"
 
-43: 
+43:
   answer: B
-  hints:
+  solution:
     - "total\ employed = employed\ males + employed\ females"
     - "64\% = 48\% + employed\ females"
-    - "employed\ females = 16\%" 
+    - "employed\ females = 16\%"
     - "employed\ females / employed\ people = 16\% / 64\%"
     - "25\%"
-    
-44: 
+
+44:
   answer: B
-  hints:
+  solution:
     - "work = speed * time * workers"
     - "270 = speed * 1 * 6"
     - "speed = 45"
@@ -377,7 +377,7 @@
 
 45:
   answer: A
-  hints:
+  solution:
     - "\text{10 consecutive integers: } (a, a + 1, a + 2, a + 3.. a + 9)"
     - "\text{First 5: } (a, a + 1, a + 2, a + 3, a + 4)"
     - "\text{Sum of first 5: } 5a + 10"
@@ -386,9 +386,9 @@
     - "\text{Sum of last 5: } 5a + 35"
     - "5a + 35 = 5 * 110  + 35 = 585"
 
-46: 
+46:
   answer: D
-  hints:
+  solution:
     - "\text{Day 1: } amount\ orangeade = 1\ amount\ OJ + 1\ amount\ water"
     - "= 2\ amount\ orangeade"
     - "\text{Day 2: } amount\ orangeade = 1\ amount\ OJ + 2\ amount\ water"
@@ -399,9 +399,9 @@
     - "0.60 * 2 = price_{day\ 2} * 3"
     - price_{day\ 2} = 0.40
 
-47: 
+47:
   answer: A
-  hints:
+  solution:
     - "\text{As many workers that want A are at A, as many want B are at B}"
     - "Positions at\ A = 50 * 40\% = 20"
     - "Positions at\ B = 50 * 60\% = 30"
@@ -411,46 +411,46 @@
     - "\text{Optimize for workers that want B: 15 happy workers at B, 0 unhappy at A} "
     - "\text{Total 15 unhappy workers} "
 
-48: 
+48:
   answer: C
-  hints:
+  solution:
     - "total\ clips = \frac{2\ cases}{} * \frac{c\ cartons}{1\ case} * \frac{b\ boxes}{1\ carton} * \frac{100\ clips}{1\ box}"
     - "200bc"
 
 49:
   answer: B
-  hints:
+  solution:
     - "\text{First 10 multiples of 5 are evenly spaced}"
     - "\text{In an evenly spaced set, median = mean}"
-    - "\text{M - m = 0}"    
+    - "\text{M - m = 0}"
 
-50: 
+50:
   answer: A
-  hints:
+  solution:
     - "distance = speed * time"
     - "y = speed * 11"
     - "speed = y / 11"
-    - "distance = speed * time"    
+    - "distance = speed * time"
     - "x = \frac{y}{11} * time"
     - "time = \frac{11x}{y}"
-    
+
 51:
-  answer: C 
+  answer: C
   type: data_sufficiency
-  hints:
-    - "1) ~ O= 2G + 20"    
-    - "\text{1 formula, 2 variables. 1 is insufficient.}" 
+  solution:
+    - "1) ~ O= 2G + 20"
+    - "\text{1 formula, 2 variables. 1 is insufficient.}"
     - "2) ~ 15O + 18G = 38700"
     - "15O + 18G = 38700 ~~~ \rightarrow ~~~ 18G = 38700 - 15O ~~~ \rightarrow ~~~ G = 2150 - \frac{5}{6}O"
-    - "\text{2 is insufficient. 1 formula, 2 variables.}" 
+    - "\text{2 is insufficient. 1 formula, 2 variables.}"
     - "1\&2) ~ O = 2G + 20 \\ G = 2150 - \frac{5}{6}O"
     - "O = 2(2150 - \frac{5}{6}O) + 2"
-    - "\text{O can be solved. 1 \& 2 together is sufficient.}" 
-            
+    - "\text{O can be solved. 1 \& 2 together is sufficient.}"
+
 52:
   answer: B
   type: data_sufficiency
-  hints:
+  solution:
     - "total\ rate\ increasing = rate\ in - rate\ out"
     - "\text{1) Gives no information about rate of flow. Insufficient.}"
     - "2) ~ total\ rate\ increasing = \frac{10\ gallon}{1\ min} - \frac{10\ gallon}{2.5\ min}"
@@ -459,7 +459,7 @@
 53:
   answer: C
   type: data_sufficiency
-  hints:
+  solution:
     - "total\ income = hours worked * hourly\ wage"
     - "1) ~ 225 = 30 * hourly\ wage"
     - "hourly\ wage = 7.5"
@@ -470,11 +470,11 @@
     - "2) ~ hourly\ wage + 1.50 = hourly\ wage * 1.20"
     - "hourly\ wage * 0.2 = 1.5 ~~~ \rightarrow ~~~ hourly\ wage = 7.5"
     - "\text{Same steps from statement 1 can be used. 2 is sufficient.}"
-  
+
 54:
   answer: E
   type: data_sufficiency
-  hints:
+  solution:
     - "\text{Statement 1 tells nothing about biology students. Insufficient.}"
     - "\text{Statement 2 tells nothing about chemistry students. Insufficient.}"
     - "\text{Statements 1 \& 2 tell us nothing about students in neither. Insufficient.}"
@@ -482,7 +482,7 @@
 55:
   answer: B
   type: data_sufficiency
-  hints:
+  solution:
     - "\text{1 clearly insufficient, n can be any value over 12.}"
     - "\text{The numbers ordered, excluding n: } (9, 12, 15, 20)"
     - "\text{Only way for 13 to be median is if n = 13: } (9, 12, 13, 15, 20)"
@@ -490,7 +490,7 @@
 
 56:
   answer: A
-  hints:
+  solution:
     - "\text{Let's call C the bottom left corner. VCR makes a right triangle.}"
     - "\overline{VC} = 5, \overline{VR} = 10. \text{Use pythogorean theorem for } \overline{CR}"
     - "5^2 + (\overline{CR})^2 = 10^2"
@@ -500,35 +500,35 @@
 
 57:
   answer: D
-  hints:
+  solution:
     - "area\ of\ doughnut = area\ of\ big\ circle - area\ of\ small\ circle"
     - "= 11^2\pi - 8^2\pi"
     - "= 57\pi"
-    
-58: 
+
+58:
   answer: A
-  hints:
+  solution:
     - "volume\ of\ rectangular\ prism = length*width*height = l*w*h"
     - "area\ of\ side\ 1 = l*w = 12"
     - "area\ of\ side\ 2 = w*h = 15"
     - "area\ of\ side\ 3 = l*h = 20"
-    - "(l*w) * (w*h) * (l*h) = 12 * 15 * 20 = 3600"   
-    - "(l*w*h)^2 = 3600"   
-    - "l*w*h = 60"   
+    - "(l*w) * (w*h) * (l*h) = 12 * 15 * 20 = 3600"
+    - "(l*w*h)^2 = 3600"
+    - "l*w*h = 60"
 
 59:
   answer: E
-  hints:
+  solution:
     - "\text{Radius goes from (2,-3) to (5,0)}"
     - "\text{Length of radius equals distance from (2,-3) to (5,0)}"
     - "\text{Distance between points: } \sqrt{(y_2 - y_1)^2 + (x_2 - x_1)^2}"
     - "\sqrt{(0 - (-3))^2 + (5 - 2)^2}"
     - "\sqrt{18} = 3\sqrt{2} = radius"
     - "area = \pi * r^2 = \pi * (3\sqrt(2))^2 = 18\pi"
-    
+
 60:
   answer: C
-  hints: 
+  solution:
     - "\text{Call C the bottom right corner. ACB is a right triangle.}"
     - "(\overline{CB})^2 + (\overline{AC})^2 = (\overline{AB})^2"
     - "5^2 + (\overline{AC})^2 = 13^2"
@@ -538,7 +538,7 @@
 
 61:
   answer: D
-  hints:
+  solution:
     - "\text{The ladder against the wall makes a 30-60-90 triangle}"
     - "\text{The ladder is the hypotenuse opposite to the 90 angle.}"
     - "\text{The height is the triangle side opposite to the 60 angle.}"
@@ -549,7 +549,7 @@
 
 62:
   answer: A
-  hints:
+  solution:
     - "width = a, length = 2a"
     - "perimeter = 2 * width + 2 * length = 6a"
     - "6a = 360 ~~~ \rightarrow ~~~ a = 60"
@@ -557,7 +557,7 @@
 
 63:
   answer: E
-  hints:
+  solution:
     - "\text{area of triangle: } x * y / 2 = (y + 2) * y / 2"
     - "(y + 2) * y / 2 = 24"
     - "y^2 + 2y - 48 = 0"
@@ -569,24 +569,24 @@
 
 64:
   answer: D
-  hints:
+  solution:
     - "\text{A full 360 rotation around P would bring B back to its original location.}"
     - "\text{A one-third of full clockwise rotation would bring it to C.}"
     - "\text{A two-third of full clockwise rotation would bring it to A.}"
     - "360 * \frac{2}{3} = 240"
-    
+
 65:
   answer: A
-  hints:
+  solution:
     - "\angle QPS = 180 - 140 = 40"
     - "x = \angle QRS = \angle QPS = 40"
     - "\angle PSR = 180 - \angle QPS = 180 - 40 = 140"
     - "2y = 140 ~~~ \rightarrow ~~~ y = 70"
     - "y - x = 30"
-    
+
 66:
   answer: E
-  hints:
+  solution:
     - "\text{If function y(x) is symmetric at x = 2: } y(2 + n) = y(2 - n)"
     - "\text{For example: } y(2 + 6) = y (2 - 6) ~~~ \rightarrow ~~~ y(8) = y(-4)"
     - "y(2 + 1) = y(2 - 1) ~~~ \rightarrow ~~~ y(3) = y(1)"
@@ -594,15 +594,15 @@
 
 67:
   answer: D
-  hints:
+  solution:
     - "volume\ of\ box = l*w*h = 10"
     - "volume\ of\ new\ box = (2l)*(2w)*(2h)"
     - "= 8 * (l*w*h)"
     - "= 8 * 10 = 80"
-    
+
 68:
   answer: C
-  hints:
+  solution:
     - "angle\ of\ unshaded\ region = 150 + 150 = 300"
     - "angle\ of\ circle = angle\ of\ shaded\ region + angle\ of\ unshaded\ region"
     - "360 = angle\ of\ shaded\ region + 300"
@@ -611,15 +611,15 @@
 
 69:
   answer: E
-  hints:
+  solution:
     - "\text{X coordinate: } 7"
     - "\text{Y coordinate: } -5"
     - "(7, -5)"
-    
-70: 
+
+70:
   answer: A
   type: data_sufficiency
-  hints: 
+  solution:
     - "sum\ of\ triangle\ angles = 180"
     - "x + y + z = 180"
     - "1) ~ (x + y) + z = 180 ~~~ \rightarrow ~~~ 139 + z = 180"
@@ -628,11 +628,11 @@
     - "x = 72"
     - "\text{If x is 72, and y + z is 108, we can have mulitple values for z.}"
     - "\text{2 is insufficient}"
-    
+
 71:
   answer: A
   type: data_sufficiency
-  hints: 
+  solution:
     - "\text{In a triangle, largest side is opposite to largest angle}"
     - "1) ~ \overline{PR} = x + 3 > \overline{QR} = x + 2 > \overline{PQ} = x"
     - "\text{PR is largest side, so angle Q is largest angle. 1 is sufficient.}"
@@ -643,17 +643,17 @@
 72:
   answer: E
   type: data_sufficiency
-  hints:
+  solution:
     - "\text{Imagine the painted section to be its own little cylinder.}"
     - "surface\ area\ of\ cylinder\ sides = 2\pi rh"
     - "1) ~ h = 0.5 \text{ - radius still unknown}"
     - "\text{1 is insufficient}"
     - "\text{2 tells us neither height or radius. Also insufficient.}"
     - "\text{1 \& 2 together still doesn't give radius, insufficient.}"
-    
+
 73:
    answer: D
-   hints:
+   solution:
      - "\text{1) P and Q have same x coordinate means PQ is perfectly vertical.}"
      - "\text{We don't know the slope of PR, so 1 is insufficient}"
      - "\text{1) P and R have same y coordinate means PR is perfectly horizontal.}"
@@ -661,34 +661,34 @@
      - "\text{1 \& 2) Together, PQ is horizontal, and PR is vertical}"
      - "\text{Angle PQR is 90 degrees, 1 \& 2 is sufficient together}"
 
-74: 
+74:
   answer: A
-  hints:
+  solution:
     - "height\ of\ staircase = number\ of\ steps * step\ height"
     - "1) ~ 9 = number\ of\ steps * \frac{3}{4}"
     - "\text{We can determine number of steps, 1 is sufficient}"
-    - "\text{2 tells us no new information we need. 2 is insufficient.}"    
-    
+    - "\text{2 tells us no new information we need. 2 is insufficient.}"
+
 75:
   answer: C
-  hints: 
+  solution:
     - "\text{If a / b is positive, a \& b are both positive, or both negative}"
     - "\text{If a and b are both positive, ab is positive}"
     - "\text{If a and b are both negative, ab is positive}"
     - "ab > 0"
 
-76: 
+76:
   answer: B
-  hints:
+  solution:
     - "\text{List odd numbers between 60 and 70 as possible primes: } 61, 63, 65, 67, 69"
     - "\text{63 is divisible by 3 - not prime}"
     - "\text{65 is divisible by 5 - not prime}"
     - "\text{69 is divisible by 9 - not prime}"
-    - "61 + 67 = 128"    
+    - "61 + 67 = 128"
 
-77: 
+77:
   answer: C
-  hints:
+  solution:
     - "20! = 20 * 19 * 18 * 17 * 16 * 15 .. * 2 * 1"
     - "\text{20! is divisible by 15, 17 and 19}"
     - "\text{If 20! is divisible by 15, then 20! + 17 is not divisible by 15}"
@@ -698,33 +698,33 @@
 
 78:
   answer: A
-  hints:
+  solution:
     - "\text{Least common multiple of 1, 2, 3, 4, 5, 6, 7, so prime factor}"
     - "2 = 2^1, ~ 3=3^1, ~ 4 = 2^2, ~ 5 = 5^1, ~ 6 = 2^1 * 3^1, 7 = 7^1"
     - "\text{Least common multiple takes largest exponent for each base}"
     - "least\ common\ multiple = 2^2 * 3^1 * 5^1 * 7^1"
     - "= 420"
-    
+
 79:
   answer: B
-  hints:
+  solution:
     - "\text{Number of ways to pick two letters from n letters (order doesn't matter): } \frac{n!}{(n-2)!2!}"
     - "\text{A) 4 single letter codes (a, b, c, d) and 4! / (2! * 2!)  = 6 double codes }"
     - "4 + 6 = 10 \text{ isn't enough}"
     - "\text{B) 5 single letter codes and 5! / (3! * 2!)  = 10 double codes }"
     - "5 + 10 = 15 \text{ is enough}"
-    
+
 80:
   answer: C
-  hints:
+  solution:
     - "\text{How many ways are there to pick 2 teams from 8?}"
     - "\text{Order doesn't matter because A vs B is the same as B vs A}"
     - "\frac{8!}{6!2!}"
     - "8 * 7 / 2 = 28"
-    
+
 81:
   answer: C
-  hints:
+  solution:
     - "\text{Try each number}"
     - "A) ~ \frac{101}{1} = 101"
     - "B) ~ \frac{102}{2} = 51"
@@ -732,7 +732,7 @@
 
 82:
   answer: A
-  hints:
+  solution:
     - "\text{Try each number}"
     - "|A| = 2"
     - "|B| \approx 1.4"
@@ -740,17 +740,17 @@
     - "|D| \approx 1.2"
     - "|E| \approx 1.8"
     - "\text{|A| is largest.}"
-    
+
 83:
   answer: C
-  hints:
+  solution:
     - "percent\ women\ lawyers = \ percent\ women * percent\ of\ women\ that\ are\ lawyers"
     - " = 60\% * 45\%"
     - " = 0.27"
 
 84:
   answer: A
-  hints:
+  solution:
     - "number\ of\ integers between\ a\ and\ b = b - a + 1"
     - "total\ number\ of\ tickets = 350 - 101 + 1 = 250"
     - "\text{range of numbers with hundreds digit of 2: } 200 - 299"
@@ -759,31 +759,31 @@
 
 85:
   answer: E
-  hints: 
+  solution:
     - "number\ of\ women = w + 3"
     - "number\ of\ men = m + 2"
     - "total = (w + 3) + (m + 2) = w + m + 5"
     - "probability\ of\ woman = \frac{number\ of\ women}{total}"
     - " = \frac{w + 3}{w + m + 5}"
-    
+
 86:
   answer: B
-  hints:
+  solution:
     - "\text{Try a valid number, e.g. 5}"
     - "5^2 / 12 = 2\ remainder\ 1"
     - "\text{Remainder is one}"
 
 87:
   answer: B
-  hints:
+  solution:
     - "\text{Smallest class to divide by 8 and 12: Least Common Multiple of 8 and 12}"
     - "\text{To get LCM, prime factor 8 and 12 and choose largest exponent for each base.}"
     - "8 = 2^3, ~ 12 = 2^2 * 3^1"
     - "LCM = 2^3 * 3^1 = 24"
-    
+
 88:
   answer: B
-  hints:
+  solution:
     - "\text{Number of ways to pick one number from A, one from B: } size\ of\ A * size\ of\ B"
     - " = 20\ pairs of\ integers"
     - "\text{Valid pairs that add to 9: } (A: 2, B: 7),  ~ (A: 3, B: 6), ~ (A: 4, B: 5), ~ (A: 5, B: 4)"
@@ -792,73 +792,68 @@
 
 89:
   answer: C
-  hints:
-    - "\text{Even means divisible by 2}"  
+  solution:
+    - "\text{Even means divisible by 2}"
     - "\text{2n is obviously divisible by 2}"
-    
+
 90:
   answer: C
   type: data_sufficiency
-  hints:
+  solution:
     - "even + even = odd, ~ even + odd = odd, ~ odd + odd = even"
-    - "n + 1 = odd ~~~ \rightarrow ~~~ n = even"    
+    - "n + 1 = odd ~~~ \rightarrow ~~~ n = even"
     - "1) ~ n + 2 = even ~~~ \rightarrow ~~~ n = even"
-    - "\text{1 is sufficient}"    
+    - "\text{1 is sufficient}"
     - "2) ~ n - 1 = odd ~~~ \rightarrow ~~~ n = even"
-    - "\text{2 is sufficient}"    
-    
+    - "\text{2 is sufficient}"
+
 91:
   answer: A
   type: data_sufficiency
-  hints:
+  solution:
     - "\text{The last two digits of a number are the remainder when divided by 100}"
     - "1332 / 100 = 13\ remainder\ 32, ~ 25530 / 100 = 255\ remainder\ 30"
     - "\text{1) tells us the last two digits are 30. Tens digit is 3. 1 is sufficient.}"
     - "\text{2) Try different values: } 140 / 110 = 1\ remainder\ 30"
     - "280 / 110 = 2\ remainder\ 30"
     - "{Different tens digit values possible with 2. 2 is insufficient}"
-    
-92: 
+
+92:
   answer: A
   type: data_sufficiency
-  hints: 
-    - "\text{1) If q = -s, the midpoint of q and s is zero}"  
-    - "\text{R is closest to that midpoint. 1 is sufficient.}"  
-    - "\text{2) Try different scenarios where: } -t < q"  
-    - "q, r, s, t = 1, 2, 3, 4 \text{ : r is not closest to zero}"  
-    - "q, r, s, t = -1, 0, 1, 2 \text{ :  r is closest to zero}" 
-    - "\text{2) 2 is insufficient because of different possible answers when: } -t < q" 
+  solution:
+    - "\text{1) If q = -s, the midpoint of q and s is zero}"
+    - "\text{R is closest to that midpoint. 1 is sufficient.}"
+    - "\text{2) Try different scenarios where: } -t < q"
+    - "q, r, s, t = 1, 2, 3, 4 \text{ : r is not closest to zero}"
+    - "q, r, s, t = -1, 0, 1, 2 \text{ :  r is closest to zero}"
+    - "\text{2) 2 is insufficient because of different possible answers when: } -t < q"
 
 93:
   answer: E
   type: data_sufficiency
-  hints:
+  solution:
     - "\text{1) Valid values for k are: } 57, 59, 61, 63, 65"
     - "\text{1 alone is insufficient.}"
     - "\text{2) Valid values for k are: } 59, 62, 65"
     - "\text{2 alone is insufficient.}"
     - "\text{1 \& 2) Valid values for k are: } 59, 65"
     - "\text{1 \&2 together are insufficient.}"
-    
+
 94:
   answer: A
   type: data_sufficiency
-  hints:
+  solution:
     - "\text{1) If 2/3 of the students are boys, the chance a boy will be picked is 2/3.}"
     - "\text{1 is sufficient.}"
     - "\text{2) Knowing 10 students are girls gives no indication on number of boys.}"
     - "\text{2 is insufficient.}"
-    
+
 95:
   answer: B
-  hints:
+  solution:
     - "\text{Product ab should only have two prime factors, a and b.}"
     - "\text{Prime factor each option.}"
     - "14 = 2^1 * 7^1 ~~~ \rightarrow ~~~ \text{two prime factors}"
     - "102 = 2^1 * 3^1 * 17^1 ~~~ \rightarrow ~~~ \text{three prime factors}"
     - "\text{ab cannot be 102}"
-        
-    
-    
-    
-    

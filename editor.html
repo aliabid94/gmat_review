@@ -22,6 +22,7 @@
     <script src="util.js"></script>
     <script src="script.js"></script>
     <script>
+      var day = (new Date()).getDay()
       var old_data = {}
       var new_data = {}
       function error(e) {
@@ -34,17 +35,18 @@
         }
       }
       function load_problem(problem_number) {
-        var content =  render_to_string(problem_number-1, problem_number, new_data[problem_number], "")
+        var content =  render_to_string(problem_number-1, new_data[problem_number])
         var target = $(`.problem[num="${problem_number}"]`)
         if (target.get(0)) {
           target.html(content)
-          console.log("updated " + problem_number);
+          // console.log("updated " + problem_number);
         } else {
           $(".output").append(`<div class='problem' num="${problem_number}">${content}</div>`);
-          console.log("added " + problem_number);
+          // console.log("added " + problem_number);
         }
       }
       function load_yaml(data) {
+        seed = day
         data = double_slash(data)
         try {
           new_data = YAML.parse(data)
@@ -61,7 +63,7 @@
             var problem_number = old_problem_numbers[i]
             if (problem_numbers.indexOf(problem_number) < 0) {
               $(`.problem[num="${problem_number}"]`).remove();
-              console.log("removed " + problem_number);
+              // console.log("removed " + problem_number);
             } else {
               if (!_.isEqual(new_data[problem_number], old_data[problem_number])) {
                 change_answer = true
@@ -83,7 +85,7 @@
                 error(e)
               }
             }
-          }          
+          }
         }
         old_data = new_data;
         if (change_answer) {
@@ -104,10 +106,10 @@
       control_capture("s", function() {
         $(".copy").click()
       })
-      $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers-mini.yaml", function(data) {
-        $("textarea").text(data);
-        load_yaml(data)
-      });
+      // $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers-mini.yaml", function(data) {
+      //   $("textarea").text(data);
+      //   load_yaml(data)
+      // });
       $(".input").bind("keydown click focus", function() {
         var lines = this.value.substr(0, this.selectionStart).split("\n")
         for (var i = lines.length - 1; i >= 0; i--) {

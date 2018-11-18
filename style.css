@@ -1,7 +1,7 @@
 body {
-  padding: 0px 30px !important;
+  padding: 15px 30px 0px !important;
 }
-.katex { font-size: 1em !important; } 
+.katex { font-size: 1em !important; }
 .problem, .check_answers, .reward {
   max-width: 520px;
   margin-bottom: 30px;
@@ -10,33 +10,33 @@ body {
 .question-number {
   margin-bottom: 12px;
 }
-.question, .answers {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.question {
-  width: 300px;
-  height: 300px;
-}
 
 .question img {
     max-width: 100%;
     max-height: 100%;
 }
-.answers {
-  width: 120px;
-  margin-left: 15px;
-}
 
+.answers {
+  margin-top: 12px;
+  width: 160px;
+}
+.white_canvas {
+ margin-bottom: 12px;
+}
 .answers > .buttons {
   width: 100%;
+}
+.choice {
+  text-align: left !important;
 }
 .button > i {
   height: 100%;
 }
 .hint {
   margin-bottom: 10px;
+}
+.intro, .final_score {
+  margin-top: 0 !important;
 }
 .final_score {
   display: none;
@@ -52,8 +52,8 @@ body {
 .editor {
   padding-bottom: 15px;
   width: 100%;
-  height: calc(100% - 140px);
-  
+  height: calc(100% - 120px);
+
 }
 .input, .output {
   display: inline-block;
@@ -75,7 +75,3 @@ textarea {
 .editor .add_hint {
   display: none !important;
 }
-.error {
-  margin-top: 20px !important
-}
-

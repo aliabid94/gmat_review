@@ -1,24 +1,34 @@
-function render_to_string(i, question_number, answer) {
+function render_to_string(i, answer) {
+  var choices = answer.choices || {}
+  if ("variables" in answer) {
+    for(variable_expression of answer["variables"]) {
+      var expr_string = "var " + variable_expression["name"] + " = " + "parseInt(`" + pickRandom(variable_expression["values"]) + "`)"
+      eval(expr_string)
+    }
+  }
+  console.log(answer)
+  answer = JSON.parse(eval("`" + JSON.stringify(answer) + "`"))
+  console.log(answer)
   return `
    <div class='ui message'>
     <div class='question-number'>
       <div class='ui header'>Question ${i+1}</div>
     </div>
-    <div>
-      <div class='question ui segment'>
-        <img src='questions/${question_number}.png'>
-      </div>
-      <div class='answers'>
-        <div class='ui vertical buttons'>
-          <button class='ui button fluid choice ${answer["answer"] == "A" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Statement 1 only" : "A"}</button>
-          <button class='ui button fluid choice ${answer["answer"] == "B" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Statement 2 only" : "B"}</button>
-          <button class='ui button fluid choice ${answer["answer"] == "C" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Either Statement 1 or 2" : "C"}</button>
-          <button class='ui button fluid choice ${answer["answer"] == "D" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Statement 1 & 2 together" : "D"}</button>
-          <button class='ui button fluid choice ${answer["answer"] == "E" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Together insufficient" : "E"}</button>
+    <div class="white_canvas">
+      <div class='question ui segment fluid'>
+        ${katex.renderToString(answer["question"] || "")}
+        <div class='answers'>
+          <div class='ui vertical buttons'>
+            <button class='ui button left aligned fluid choice ${answer["answer"] == "A" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Statement 1 only" : "A) " + katex.renderToString(choices["A"] || "")}</button>
+            <button class='ui button fluid choice ${answer["answer"] == "B" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Statement 2 only" : "B) " + katex.renderToString((choices || {})["B"] || "")}</button>
+            <button class='ui button fluid choice ${answer["answer"] == "C" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Either Statement 1 or 2" : "C) " + katex.renderToString((choices || {})["C"] || "")}</button>
+            <button class='ui button fluid choice ${answer["answer"] == "D" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Statement 1 & 2 together" : "D) " + katex.renderToString((choices || {})["D"] || "")}</button>
+            <button class='ui button fluid choice ${answer["answer"] == "E" ? "correct" : ""}'>${answer.type == "data_sufficiency" ? "Together insufficient" : "E) " + katex.renderToString((choices || {})["E"] || "")}</button>
+          </div>
         </div>
       </div>
     </div>
-    ${(answer["hints"] || []).map(str => "<div class='hint'>"+katex.renderToString(str)+"</div>").join("")}
+    ${(answer["solution"] || []).map(str => "<div class='hint'>"+katex.renderToString(str)+"</div>").join("")}
     <button class='ui blue button add_hint'>Hint?</button>
   </div>`
 }
