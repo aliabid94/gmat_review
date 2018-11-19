@@ -1,14 +1,12 @@
 function render_to_string(i, answer) {
-  var choices = answer.choices || {}
   if ("variables" in answer) {
     for(variable_expression of answer["variables"]) {
       var expr_string = "var " + variable_expression["name"] + " = " + "parseInt(`" + pickRandom(variable_expression["values"]) + "`)"
       eval(expr_string)
     }
   }
-  console.log(answer)
   answer = JSON.parse(eval("`" + JSON.stringify(answer) + "`"))
-  console.log(answer)
+  var choices = answer.choices || {}
   return `
    <div class='ui message'>
     <div class='question-number'>

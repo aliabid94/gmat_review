@@ -35,6 +35,7 @@
         }
       }
       function load_problem(problem_number) {
+        seed = day + problem_number
         var content =  render_to_string(problem_number-1, new_data[problem_number])
         var target = $(`.problem[num="${problem_number}"]`)
         if (target.get(0)) {
@@ -46,7 +47,6 @@
         }
       }
       function load_yaml(data) {
-        seed = day
         data = double_slash(data)
         try {
           new_data = YAML.parse(data)
@@ -106,10 +106,10 @@
       control_capture("s", function() {
         $(".copy").click()
       })
-      // $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers-mini.yaml", function(data) {
-      //   $("textarea").text(data);
-      //   load_yaml(data)
-      // });
+      $.get("https://raw.githubusercontent.com/aliabid94/gmat_review/master/answers-mini.yaml", function(data) {
+        $("textarea").text(data);
+        load_yaml(data)
+      });
       $(".input").bind("keydown click focus", function() {
         var lines = this.value.substr(0, this.selectionStart).split("\n")
         for (var i = lines.length - 1; i >= 0; i--) {
