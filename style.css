@@ -1,7 +1,12 @@
 body {
   padding: 15px 30px 0px !important;
 }
-.katex { font-size: 1em !important; }
+.katex {
+  font-size: 1em !important;
+}
+.katex .mord.text .mord{
+  word-wrap: normal !important;
+}
 .problem, .check_answers, .reward {
   max-width: 520px;
   margin-bottom: 30px;
