@@ -57,7 +57,7 @@ body {
   height: calc(100% - 120px);
 
 }
-.input, .output {
+.editor .input, .output {
   display: inline-block;
   vertical-align: top;
   width: 50%;
@@ -76,4 +76,27 @@ textarea {
 }
 .editor .add_hint {
   display: none !important;
+}
+
+/* HOME */
+.intro {
+  font-size: 16px;
+  font-weight: bold;
+}
+.home .ui.button {
+  margin-bottom: 6px;
+  min-width: 150px;
+  padding: 7px !important;
+}
+.home .ui.button.huge {
+  margin-bottom: 10px;
+}
+.ui.progress {
+  margin: 0.5em 0 0 !important;
+}
+.ui.progress .bar {
+  height: 1em !important;
+}
+.bar .progress {
+  font-size: 0.7em !important;
 }
